@@ -1,0 +1,555 @@
+{
+  "HomeMetadata": {
+    "title": "Muyusoft — Estudio de software AI-first",
+    "description": "Diseñamos y construimos software con IA en el centro, trabajando con equipos en EE. UU. y Europa del prototipo a producción."
+  },
+  "Organization": {
+    "description": "Estudio de software AI-first, trabajando con equipos en EE. UU. y Europa, del prototipo a producción."
+  },
+  "Nav": {
+    "primary": "Navegación principal",
+    "openMenu": "Abrir menú",
+    "closeMenu": "Cerrar menú",
+    "approach": "Enfoque",
+    "services": "Servicios",
+    "team": "Equipo",
+    "work": "Trabajo",
+    "howWeStart": "Cómo empezamos",
+    "faq": "Preguntas",
+    "contact": "Contacto"
+  },
+  "Hero": {
+    "eyebrow": "Estudio de software AI-first",
+    "title": "Diseñamos y construimos software con IA en el centro.",
+    "description": "Muyusoft trabaja con equipos en EE. UU. y Europa para convertir ideas en productos listos para producción — desde el primer prototipo hasta un equipo de ingeniería continuo.",
+    "ctaPrimary": "Agenda una llamada",
+    "ctaSecondary": "Ver nuestro trabajo"
+  },
+  "Pitch": {
+    "eyebrow": "Nuestro enfoque",
+    "title": "Cómo construimos en realidad",
+    "description": "Sin specs de 40 páginas, sin diapositivas de roadmap que fingen ser avance — solo software que puedes ver y usar, cada semana.",
+    "visual": {
+      "illustrative": "Proyecto ilustrativo",
+      "demo": "DEMO ILUSTRATIVA",
+      "navigation": "Pasos de nuestro enfoque",
+      "continuity": "El mismo proyecto, de principio a fin.",
+      "scroll": "Scroll para explorar",
+      "ideaLabel": "De la idea al producto",
+      "briefTitle": "“Necesitamos ordenar las solicitudes.”",
+      "briefDescription": "Un lugar para recibir, revisar y dar seguimiento a cada pedido del equipo.",
+      "portal": "Portal de solicitudes",
+      "prototype": "Primer prototipo",
+      "weekly": "Demo semanal",
+      "requests": "Solicitudes",
+      "new": "Nueva",
+      "designTeam": "Equipo de diseño",
+      "platformAccess": "Acceso a plataforma",
+      "received": "Recibida",
+      "approved": "Aprobada",
+      "inReview": "En revisión",
+      "reviewLabel": "Velocidad con criterio",
+      "createRequest": "Crear una solicitud",
+      "reviewed": "Cambio revisado",
+      "aiProposal": "Propuesta asistida por IA",
+      "codeDescription": "Un ingeniero añade una validación de permisos antes de guardar la solicitud propuesta por IA.",
+      "engineerReview": "Revisión de ingeniería",
+      "reviewComment": "Antes de guardar, validamos que el usuario tenga acceso a este equipo.",
+      "correction": "Corrección incorporada",
+      "engineerApproval": "Aprobado por ingeniería",
+      "demoLabel": "Avance que puedes recorrer",
+      "you": "TÚ",
+      "feedback": "¿Podemos filtrar por equipo?",
+      "feedbackContext": "Feedback sobre el producto · Próxima iteración",
+      "deliveryLabel": "Listo para seguir creciendo",
+      "deliveryTitle": "Tu producto. Tus llaves.",
+      "deliveryCopy": "Todo lo necesario para continuar con autonomía.",
+      "deliverables": {
+        "code": {
+          "title": "Código fuente",
+          "description": "Repositorio y versiones"
+        },
+        "docs": {
+          "title": "Documentación",
+          "description": "Arquitectura y despliegue"
+        },
+        "tests": {
+          "title": "Pruebas",
+          "description": "Flujos principales cubiertos"
+        },
+        "access": {
+          "title": "Accesos",
+          "description": "Infraestructura y servicios"
+        }
+      },
+      "ready": "Preparado para entregar",
+      "ownership": "Propiedad del cliente"
+    },
+    "steps": {
+      "one": {
+        "label": "Idea",
+        "outcome": "Del brief a una primera versión usable",
+        "caption": "Una idea empieza a tomar forma",
+        "title": "Entra la idea, sale software funcionando",
+        "description": "Un brief corto y una llamada bastan para empezar a escribir código real en días, no meses."
+      },
+      "two": {
+        "label": "Criterio",
+        "outcome": "Velocidad con responsabilidad técnica",
+        "caption": "La decisión final sigue siendo humana",
+        "title": "La IA redacta, los ingenieros deciden",
+        "description": "Usamos IA para generar código base, pruebas y primeros borradores — luego un ingeniero senior revisa cada línea antes de que salga a producción."
+      },
+      "three": {
+        "label": "Visibilidad",
+        "outcome": "Un producto que puedes probar y comentar",
+        "caption": "Cada semana, algo que puedes usar",
+        "title": "Lo ves antes de preguntar",
+        "description": "Demos semanales sobre software real corriendo en un entorno de staging que puedes recorrer tú mismo."
+      },
+      "four": {
+        "label": "Entrega",
+        "outcome": "Autonomía para decidir el siguiente paso",
+        "caption": "Todo listo para que puedas continuar",
+        "title": "Construido para entregarse limpio",
+        "description": "Documentado, probado y tuyo para quedarte — ya sea que lo lleves in-house después del lanzamiento o sigas trabajando con nosotros."
+      }
+    }
+  },
+  "Services": {
+    "eyebrow": "Servicios",
+    "title": "Un equipo técnico.",
+    "description": "Desde la primera hipótesis hasta un producto que crece. Elige el punto en el que estás.",
+    "cta": "Hablemos",
+    "packages": {
+      "prototype": {
+        "name": "Prototipo",
+        "description": "Valida una idea rápido con una versión clicable, lista para demo.",
+        "features": [
+          "Sprint de 1–2 semanas",
+          "Solo el flujo principal",
+          "Lista para pruebas con usuarios"
+        ],
+        "price": "Desde $$$$",
+        "cadence": "Pago único",
+        "stage": "VALIDAR",
+        "duration": "1–2 semanas",
+        "intent": "Quiero validar una idea.",
+        "receives": "Un prototipo clicable del flujo principal",
+        "objective": "Probar la idea con usuarios",
+        "format": "Sprint de alcance definido",
+        "amount": "$$$$",
+        "cta": "Validar mi idea"
+      },
+      "custom": {
+        "name": "Producto a medida",
+        "description": "Un producto listo para producción, construido de punta a punta.",
+        "features": [
+          "Equipo pequeño dedicado",
+          "Demos semanales",
+          "Listo para lanzar en 8–12 semanas"
+        ],
+        "price": "Desde $$$$",
+        "cadence": "Por proyecto",
+        "stage": "CONSTRUIR",
+        "duration": "8–12 semanas",
+        "intent": "Quiero lanzar un producto.",
+        "receives": "Un producto listo para producción",
+        "objective": "Lanzar y operar tu solución",
+        "format": "Equipo dedicado y demos semanales",
+        "amount": "$$$$",
+        "cta": "Construir mi producto"
+      },
+      "team": {
+        "name": "Equipo continuo",
+        "description": "Un equipo de ingeniería AI-first integrado que entrega en cada sprint.",
+        "features": [
+          "Ingenieros senior integrados a tu equipo",
+          "Async + sincronías semanales",
+          "Cancela cuando quieras"
+        ],
+        "price": "Desde $$$$",
+        "cadence": "Por mes",
+        "stage": "EVOLUCIONAR",
+        "duration": "Continuo",
+        "intent": "Necesito capacidad de ingeniería.",
+        "receives": "Ingenieros senior integrados a tu equipo",
+        "objective": "Entregar mejoras en cada sprint",
+        "format": "Colaboración mensual, cancelable",
+        "amount": "$$$$",
+        "cta": "Ampliar mi equipo"
+      }
+    },
+    "titleAccent": "Tres formas de empezar.",
+    "from": "Desde",
+    "details": {
+      "receives": "Recibes",
+      "objective": "Objetivo",
+      "format": "Formato"
+    },
+    "scopeNote": "El alcance se define contigo antes de empezar.",
+    "helpCta": "¿Todavía no sabes cuál elegir? Lo vemos juntos"
+  },
+  "Team": {
+    "eyebrow": "Equipo",
+    "title": "Cuatro socios técnicos, un solo equipo responsable",
+    "description": "Sin gerentes de cuenta de por medio — trabajas directo con quienes construyen tu producto.",
+    "members": {
+      "one": {
+        "name": "Matheo Chávez",
+        "role": "Producto y sistemas de IA"
+      },
+      "two": {
+        "name": "Anthony Cochea",
+        "role": "Ingeniería frontend"
+      },
+      "three": {
+        "name": "Juan Aristizabal",
+        "role": "Backend e infraestructura"
+      },
+      "four": {
+        "name": "Andrés Loza",
+        "role": "Diseño y entrega"
+      }
+    }
+  },
+  "HowWeStart": {
+    "eyebrow": "Cómo empezamos",
+    "title": "Un primer paso sencillo.",
+    "description": "De la primera conversación a software que puedes probar, en 14–21 días. Cada hito tiene un entregable.",
+    "steps": {
+      "one": {
+        "label": "DÍA 0 · SIN COSTO",
+        "title": "Nos cuentas la idea.",
+        "description": "30 minutos para entender tus objetivos, restricciones y plazos.",
+        "action": "Ver agenda de la llamada",
+        "kicker": "CONVERSACIÓN",
+        "detailTitle": "Empezamos por entender.",
+        "detailDescription": "No necesitas traer una especificación. Una idea, un problema o un proceso que quieras mejorar bastan para conversar.",
+        "note": "30 minutos · Sin costo"
+      },
+      "two": {
+        "label": "DÍA 3 · PROPUESTA",
+        "title": "Acordamos el alcance.",
+        "description": "Recibes una propuesta con entregables, tiempos y precio definidos.",
+        "action": "Ver alcance y entregables",
+        "kicker": "PROPUESTA",
+        "detailTitle": "El alcance queda por escrito.",
+        "detailDescription": "Acordamos qué entra, qué se entrega y cuánto cuesta. Puedes revisar la propuesta antes de comprometerte con el arranque.",
+        "note": "Entregables, tiempos y precio definidos"
+      },
+      "three": {
+        "label": "DÍA 7 · ARRANQUE",
+        "title": "Empezamos a construir.",
+        "description": "Tras la firma y el 40% inicial, arrancamos esa misma semana.",
+        "action": "Ver el primer sprint",
+        "kicker": "ARRANQUE",
+        "detailTitle": "Del acuerdo al primer sprint.",
+        "detailDescription": "Con la firma y el 40% inicial, comenzamos a construir. El trabajo se organiza alrededor de una primera entrega concreta.",
+        "note": "Día 7 de referencia · 40% inicial"
+      },
+      "four": {
+        "label": "DÍA 14–21 · DEMO",
+        "title": "Lo pruebas tú mismo.",
+        "description": "Funcionalidad real en un entorno de staging, lista para tu feedback.",
+        "action": "Ver cómo recibes el avance",
+        "kicker": "DEMO",
+        "detailTitle": "El avance ya se puede usar.",
+        "detailDescription": "Te compartimos un entorno de staging para recorrer el flujo construido, probarlo y comentar lo que sigue.",
+        "note": "Días 14–21 de referencia · Software real"
+      }
+    },
+    "titleAccent": "Un camino claro hasta la demo.",
+    "timelineNote": "Cronograma de referencia desde la llamada inicial, sujeto al alcance y a tu aprobación. Los ejemplos de entregables son ilustrativos.",
+    "cta": "Cuéntanos qué quieres construir",
+    "artifacts": {
+      "conversation": {
+        "header": "PRIMERA CONVERSACIÓN",
+        "badge": "30 MIN",
+        "title": "Tu idea + nuestro equipo",
+        "subtitle": "Agenda de referencia",
+        "problem": "El problema que quieres resolver",
+        "context": "Objetivos, contexto y restricciones",
+        "next": "El siguiente paso"
+      },
+      "proposal": {
+        "header": "PROPUESTA / RESUMEN",
+        "badge": "ILUSTRATIVO",
+        "title": "Sabes qué vamos a construir.",
+        "scope": {
+          "label": "Alcance",
+          "value": "Flujo principal acordado"
+        },
+        "deliverables": {
+          "label": "Entregables",
+          "value": "Producto + documentación"
+        },
+        "terms": {
+          "label": "Plazos y precio",
+          "value": "Definidos antes del arranque"
+        },
+        "next": {
+          "label": "Siguiente paso",
+          "value": "Revisar juntos"
+        }
+      },
+      "sprint": {
+        "header": "SPRINT 01",
+        "badge": "EJEMPLO DE TABLERO",
+        "title": "La primera entrega toma forma.",
+        "todo": {
+          "label": "POR HACER",
+          "task": "Definir el flujo",
+          "note": "Producto + ingeniería"
+        },
+        "building": {
+          "label": "EN DESARROLLO",
+          "task": "Primera funcionalidad",
+          "note": "Avance visible"
+        }
+      },
+      "demo": {
+        "header": "STAGING / PRIMERA DEMO",
+        "badge": "ILUSTRATIVO",
+        "title": "Tu producto, funcionando.",
+        "flow": {
+          "label": "Flujo principal",
+          "value": "Listo para probar"
+        },
+        "access": {
+          "label": "Acceso del cliente",
+          "value": "Compartido"
+        },
+        "feedback": {
+          "label": "Feedback",
+          "value": "Próxima iteración ↗"
+        }
+      }
+    }
+  },
+  "Work": {
+    "eyebrow": "Trabajo seleccionado",
+    "title": "Software que cambia",
+    "titleAccent": "cómo funciona un negocio.",
+    "description": "Dos problemas operativos. Dos productos construidos para resolverlos.",
+    "explore": "Explorar caso",
+    "illustration": "Reconstrucción ilustrativa · Datos de demostración",
+    "carousel": "Proyectos seleccionados",
+    "carouselRole": "carrusel",
+    "slideRole": "diapositiva",
+    "trackLabel": "Proyectos: usa las flechas izquierda y derecha para navegar",
+    "previous": "Proyecto anterior",
+    "next": "Proyecto siguiente",
+    "choose": "Elegir proyecto",
+    "goTo": "Ver proyecto {number}: {title}",
+    "position": "Proyecto {current} de {total}",
+    "hint": "Explora nuestros proyectos",
+    "visual": {
+      "procurementAlt": "Interfaz ilustrativa de una plataforma de compras con solicitudes y aprobaciones",
+      "logisticsAlt": "Interfaz ilustrativa de una consola de despacho con rutas y una app móvil de conductor",
+      "plant": "Planta norte",
+      "summary": "Resumen de compras",
+      "week": "ESTA SEMANA",
+      "requests": "Solicitudes",
+      "sites": "3 plantas conectadas",
+      "approved": "Aprobadas",
+      "roles": "Flujo por roles",
+      "pending": "Por revisar",
+      "assigned": "Asignadas al equipo",
+      "request": "SOLICITUD",
+      "area": "ÁREA",
+      "status": "ESTADO",
+      "materials": "Material de producción",
+      "operations": "Operaciones",
+      "approvedOne": "Aprobada",
+      "safety": "Equipo de seguridad",
+      "parts": "Repuestos de línea",
+      "maintenance": "Mantenimiento",
+      "inReview": "En revisión",
+      "synced": "Orden sincronizada con el ERP",
+      "noReentry": "Sin reingreso manual de datos",
+      "live": "En vivo",
+      "fleet": "40 VEHÍCULOS / VISTA DE FLOTA",
+      "enRoute": "En ruta",
+      "reassigned": "Reasignada",
+      "myRoute": "MI RUTA / HOY",
+      "phoneTitle": "Todo listo. Vamos al siguiente.",
+      "depot": "Centro de distribución",
+      "departed": "Salida confirmada",
+      "north": "Entrega · Zona norte",
+      "nextStop": "Próxima parada",
+      "east": "Entrega · Zona este",
+      "updated": "Ruta actualizada",
+      "confirm": "Confirmar entrega"
+    }
+  },
+  "WorkPage": {
+    "cta": "Hablemos de tu proyecto"
+  },
+  "FAQ": {
+    "eyebrow": "Ayuda",
+    "title": "Preguntas frecuentes",
+    "description": "Lo esencial sobre inversión, plazos y cómo trabajamos contigo.",
+    "contactPrompt": "¿Tu pregunta es más específica?",
+    "contactCta": "Conversemos sobre tu proyecto",
+    "items": {
+      "one": {
+        "question": "¿Cuánto cuesta un proyecto?",
+        "answer": "Depende del alcance. Un prototipo arranca cerca de $$$$$, un producto a medida completo cerca de $$$$$, y un equipo continuo ronda los $$$$$ al mes. Te damos un número fijo después de la llamada de descubrimiento, no un rango."
+      },
+      "two": {
+        "question": "¿Cuánto dura un proyecto típico?",
+        "answer": "Un prototipo se entrega en una a dos semanas. Un producto a medida suele estar listo para lanzar en 8 a 12 semanas. En cualquier caso, ves software funcionando en el primer sprint, no solo mockups."
+      },
+      "three": {
+        "question": "¿Con qué tecnologías trabajan?",
+        "answer": "Sobre todo TypeScript en toda la pila: Next.js y React en el frontend, Node.js o Python en el backend, y Postgres para datos. Elegimos la pila según tu problema, no al revés."
+      },
+      "four": {
+        "question": "¿Quién es dueño del código y la propiedad intelectual después del proyecto?",
+        "answer": "Tú, completamente. Una vez pagada la factura final, todo el código, diseños y activos pasan a ti — sin licencias ni dependencia de proveedor."
+      },
+      "five": {
+        "question": "¿Cómo nos comunicamos durante el proyecto?",
+        "answer": "Un canal compartido de Slack o Teams, demos semanales y un tablero de proyecto en vivo. Siempre sabes qué se entregó esta semana y qué sigue."
+      },
+      "six": {
+        "question": "¿Dan soporte después del lanzamiento?",
+        "answer": "Sí. Todo proyecto incluye 30 días de garantía para correcciones, y la mayoría de los clientes pasan a un retainer mensual para trabajo continuo después de eso."
+      },
+      "seven": {
+        "question": "¿Cómo usan exactamente la IA en su proceso?",
+        "answer": "La IA trabaja junto a nuestros ingenieros en generación de código, cobertura de pruebas y revisión de código — no reemplaza el criterio senior en arquitectura o decisiones de producto. Por eso entregamos más rápido sin recortar calidad."
+      }
+    }
+  },
+  "Contact": {
+    "eyebrow": "Hablemos",
+    "title": "La próxima buena idea",
+    "description": "Cuéntanos qué quieres resolver. No hace falta tener todo definido para dar el primer paso.",
+    "contactInfo": {
+      "email": "hello@muyusoft.com",
+      "location": "Ecuador · remoto, trabajando con equipos en EE. UU. y Europa",
+      "responseTime": "Respondemos en un día hábil"
+    },
+    "fields": {
+      "name": "Tu nombre",
+      "email": "Tu correo",
+      "company": "Empresa",
+      "projectType": "¿En qué momento estás?",
+      "message": "¿Qué te gustaría resolver?",
+      "budget": "Presupuesto estimado"
+    },
+    "projectTypeOptions": {
+      "unsure": "Quiero orientación para elegir",
+      "prototype": "Validar mi idea · Prototipo",
+      "custom": "Construir mi producto · Producto a medida",
+      "team": "Ampliar mi equipo · Equipo continuo"
+    },
+    "budgetOptions": {
+      "under10k": "Menos de $10,000",
+      "10to25k": "$10,000–$25,000",
+      "25to50k": "$25,000–$50,000",
+      "unsure": "Aún no lo sé",
+      "over50k": "Más de $50,000"
+    },
+    "requiredError": "Por favor completa este campo.",
+    "emailError": "Revisa el correo. Por ejemplo: nombre@empresa.com.",
+    "submit": "Enviar consulta",
+    "submitting": "Enviando…",
+    "successTitle": "Tu consulta está en camino.",
+    "successDescription": "Recibimos tu mensaje. Te responderemos por correo en un día hábil para conversar sobre el siguiente paso.",
+    "errorMessage": "Algo salió mal al enviar tu mensaje. Escríbenos directo a",
+    "titleAccent": "puede ser la tuya.",
+    "responseNote": "Con un siguiente paso claro.",
+    "nextSteps": {
+      "one": "Revisamos tu idea y el contexto que nos compartas.",
+      "two": "Te respondemos por correo para aclarar dudas y coordinar una llamada.",
+      "three": "En 30 minutos, vemos juntos por dónde empezar."
+    },
+    "directPrompt": "¿Prefieres escribir directamente?",
+    "formTitle": "Un poco de contexto.",
+    "formKicker": "EL PRIMER PASO",
+    "serviceChoices": {
+      "prototype": "Quiero validar una idea",
+      "custom": "Quiero lanzar un producto",
+      "team": "Necesito un equipo",
+      "unsure": "Quiero orientación"
+    },
+    "serviceHints": {
+      "prototype": "Exploraremos el flujo principal que necesitas validar.",
+      "custom": "Cuéntanos qué debe hacer tu producto y para quién.",
+      "team": "Cuéntanos qué capacidad necesita tu equipo hoy.",
+      "unsure": "Podemos ayudarte a elegir el formato que mejor encaje."
+    },
+    "placeholders": {
+      "message": "Por ejemplo: nuestras aprobaciones dependen de correos y queremos centralizarlas.",
+      "name": "¿Cómo te llamas?",
+      "email": "tu@empresa.com",
+      "company": "Nombre de tu empresa"
+    },
+    "messageHint": "El problema, quién lo tiene y qué te gustaría mejorar. Unas líneas bastan.",
+    "optional": "Opcional",
+    "extraTitle": "Empresa y presupuesto",
+    "budgetHint": "Una referencia para dimensionar el alcance, no un compromiso.",
+    "dataNote": "Usaremos estos datos para responder a tu consulta.",
+    "errorSummary": "Revisa los campos indicados antes de continuar.",
+    "validation": {
+      "message": "Cuéntanos brevemente qué quieres resolver.",
+      "name": "Escribe tu nombre.",
+      "email": "Escribe un correo para poder responderte."
+    },
+    "newMessage": "Enviar otra consulta",
+    "receipt": {
+      "interest": "INTERÉS",
+      "email": "CORREO PARA RESPONDER",
+      "next": "SIGUIENTE PASO"
+    }
+  },
+  "Footer": {
+    "tagline": "Estudio de software AI-first, construyendo para equipos en EE. UU. y Europa.",
+    "siteColumn": "Sitio",
+    "legalColumn": "Legal",
+    "legal": {
+      "privacy": "Política de privacidad",
+      "terms": "Términos de servicio",
+      "aiPolicy": "Política de IA"
+    },
+    "copyright": "© {year} Muyusoft. Todos los derechos reservados."
+  },
+  "PrivacyPage": {
+    "title": "Política de privacidad",
+    "intro": "Solo recopilamos lo que nos envías por el formulario de contacto — tu nombre, correo, empresa y mensaje — para responder tu consulta. Usamos Plausible Analytics, que no usa cookies ni recopila datos personales. Nunca vendemos ni compartimos tu información con terceros.",
+    "placeholderNotice": "Esta página es texto de relleno. Reemplázala con una política de privacidad revisada por tu asesoría legal antes de publicar, especialmente si procesas datos personales de residentes de la UE."
+  },
+  "TermsPage": {
+    "title": "Términos de servicio",
+    "intro": "Al usar este sitio, aceptas estos términos. Todo el contenido, código de muestra y diseños de este sitio son propiedad de Muyusoft salvo que se indique lo contrario.",
+    "placeholderNotice": "Esta página es texto de relleno. Reemplázala con términos de servicio revisados por tu asesoría legal antes de publicar."
+  },
+  "AiPolicyPage": {
+    "title": "Política de IA",
+    "intro": "Usamos la IA como una herramienta para nuestros ingenieros, no como reemplazo de su criterio.",
+    "practice": "En la práctica: la IA nos ayuda a generar código base, escribir cobertura de pruebas y producir primeros borradores de componentes y documentación. Cada línea que sale a producción es revisada por un ingeniero senior antes de llegar ahí — las decisiones de arquitectura, el código sensible en seguridad y las decisiones de producto nunca se delegan solo a la IA.",
+    "clientData": "Datos del cliente: no usamos código de clientes ni información confidencial de proyectos para entrenar modelos de IA. Los asistentes de código que usamos operan bajo acuerdos que excluyen el entrenamiento con datos de clientes.",
+    "updates": "Esta política puede actualizarse conforme evolucionen nuestras herramientas y prácticas."
+  },
+  "Testimonials": {
+    "eyebrow": "Testimonios",
+    "title": "Lo que dicen los clientes",
+    "items": {
+      "one": {
+        "quote": "Cita de ejemplo — reemplazar con un testimonio real antes de publicar.",
+        "name": "Jane Doe",
+        "role": "VP de Ingeniería",
+        "company": "Example Co."
+      },
+      "two": {
+        "quote": "Cita de ejemplo — reemplazar con un testimonio real antes de publicar.",
+        "name": "John Smith",
+        "role": "Head of Product",
+        "company": "Sample Inc."
+      }
+    }
+  }
+}

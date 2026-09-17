@@ -1,0 +1,73 @@
+@import "tailwindcss";
+
+@theme {
+  /* fondos: 4 niveles, en orden de profundidad */
+  --color-bg:        #08090B;
+  --color-bg-2:      #0D0F12;
+  --color-surface:   #121418;
+  --color-surface-2: #171A1F;
+
+  /* texto */
+  --color-fg:    #F2F4F7;
+  --color-muted: #8A93A3;
+  --color-dim:   #78818F;
+
+  /* acentos */
+  --color-accent:   #DCE4F0;   /* hilos del hero, isotipo */
+  --color-accent-2: #7FA6FF;   /* numeración, enlaces, foco, nav activo */
+  --color-ok:       #5FD39A;
+  --color-warn:     #E8B45F;
+
+  /* bordes (usar con opacidad vía Tailwind: border-white/10, border-white/18) */
+  --color-line:   rgba(242,244,247,.10);
+  --color-line-2: rgba(242,244,247,.18);
+
+  /* tipografía */
+  --font-sans: "Sora", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "Spline Sans Mono", ui-monospace, monospace;
+
+  /* radios */
+  --radius-chip:  6px;
+  --radius-btn:   8px;
+  --radius-input: 9px;
+  --radius-card:  14px;
+  --radius-panel: 16px;
+
+  /* layout */
+  --width-content: 1180px;
+  --height-nav: 64px;
+
+  /* movimiento */
+  --ease-brand: cubic-bezier(.2,.7,.3,1);
+}
+
+/* Modo oscuro únicamente — sin toggle ni tokens de modo claro por ahora. */
+:root {
+  color-scheme: dark;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-fg);
+}
+
+/* Respaldo por CSS: el JS de Framer Motion ya decidió animar antes de que
+   la hidratación corrija la preferencia de reduced-motion. */
+@media (prefers-reduced-motion: reduce) {
+  [data-reveal] {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
+
+/* Vignette sobre el tejido del hero para el contraste del texto. */
+.hero-veil {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    ellipse at 50% 46%,
+    rgba(8, 9, 11, 0.86) 0%,
+    rgba(8, 9, 11, 0.42) 52%,
+    rgba(8, 9, 11, 0.98) 100%
+  );
+}
