@@ -1,10 +1,10 @@
 {
   "HomeMetadata": {
-    "title": "Muyusoft — AI-first software studio",
-    "description": "We design and ship software with AI at the core, partnering with teams in the US and Europe from prototype to production."
+    "title": "MuyuSoft — Custom software built to last",
+    "description": "Four engineer-founders in Ecuador. Custom software with written scope, tests, and documentation so another team can carry it forward."
   },
   "Organization": {
-    "description": "AI-first software studio partnering with teams in the US and Europe, from prototype to production."
+    "description": "Four engineer-founders in Ecuador offering custom software development for founders and businesses in Ecuador, the US, and Europe."
   },
   "Nav": {
     "primary": "Primary navigation",
@@ -13,22 +13,27 @@
     "approach": "Approach",
     "services": "Services",
     "team": "Team",
-    "work": "Work",
+    "work": "Demonstrations",
     "howWeStart": "How we start",
     "faq": "FAQ",
-    "contact": "Contact"
+    "contact": "Contact",
+    "menu": "Menu",
+    "close": "Close",
+    "explore": "Explore MuyuSoft",
+    "contactCta": "Let’s discuss your project",
+    "language": "Language"
   },
   "Hero": {
-    "eyebrow": "AI-first software studio",
-    "title": "We design and ship software with AI at the core.",
-    "description": "Muyusoft partners with teams in the US and Europe to turn ideas into production-ready products — from the first prototype to a continuous engineering team.",
+    "eyebrow": "Custom software · From Ecuador",
+    "title": "Custom software built to last.",
+    "description": "We are four engineer-founders. Work directly with the people building your application, with written scope, tests, and documentation so another team can maintain it.",
     "ctaPrimary": "Book a call",
-    "ctaSecondary": "See our work"
+    "ctaSecondary": "Explore demonstrations"
   },
   "Pitch": {
     "eyebrow": "Our approach",
     "title": "How we actually build",
-    "description": "No 40-page specs, no roadmap slides pretending to be progress — just software you can see and use, every week.",
+    "description": "Written scope, quality checks before delivery, and progress you can try yourself. Decisions and risks are documented.",
     "visual": {
       "illustrative": "Illustrative project",
       "demo": "ILLUSTRATIVE DEMO",
@@ -40,7 +45,7 @@
       "briefDescription": "One place to receive, review, and track every request from the team.",
       "portal": "Request portal",
       "prototype": "First prototype",
-      "weekly": "Weekly demo",
+      "weekly": "Progress demo",
       "requests": "Requests",
       "new": "New",
       "designTeam": "Design team",
@@ -62,8 +67,8 @@
       "feedback": "Can we filter by team?",
       "feedbackContext": "Product feedback · Next iteration",
       "deliveryLabel": "Ready to keep growing",
-      "deliveryTitle": "Your product. Your keys.",
-      "deliveryCopy": "Everything you need to move forward independently.",
+      "deliveryTitle": "A handover with clear terms.",
+      "deliveryCopy": "Documentation and access under the agreed scope.",
       "deliverables": {
         "code": {
           "title": "Source code",
@@ -83,36 +88,36 @@
         }
       },
       "ready": "Ready to hand off",
-      "ownership": "Client-owned"
+      "ownership": "Rights agreed by contract"
     },
     "steps": {
       "one": {
         "label": "Idea",
-        "outcome": "From brief to a first usable version",
+        "outcome": "From the problem to an agreed scope",
         "caption": "An idea starts taking shape",
-        "title": "Idea in, working software out",
-        "description": "A short brief and a call are enough to start writing real code in days, not months."
+        "title": "Understand first, then build",
+        "description": "We discuss the problem and agree on scope before writing code. If more discovery is needed, we propose a paid definition phase."
       },
       "two": {
         "label": "Judgment",
         "outcome": "Speed with engineering accountability",
         "caption": "The final decision stays human",
         "title": "AI drafts, engineers decide",
-        "description": "We use AI to generate boilerplate, tests, and first drafts — then a senior engineer reviews every line before it ships."
+        "description": "AI supports our work. An engineer reviews and understands every change; tests and automated quality checks are required before delivery."
       },
       "three": {
         "label": "Visibility",
         "outcome": "A product you can test and comment on",
-        "caption": "Every week, something you can use",
+        "caption": "Progress you can try",
         "title": "You see it before you ask",
-        "description": "Weekly demos on real software running in a staging environment you can click through yourself."
+        "description": "We share progress you can try and document decisions, risks, and scope changes. We agree on a demo schedule with you."
       },
       "four": {
         "label": "Handoff",
         "outcome": "The freedom to choose your next step",
         "caption": "Everything ready for you to continue",
         "title": "Built to hand off cleanly",
-        "description": "Documented, tested, and yours to keep — whether you take it in-house after launch or keep working with us."
+        "description": "We agree on the documentation, tests, and access needed to operate and maintain the system. Intellectual property ownership and usage rights are defined in each contract."
       }
     }
   },
@@ -126,100 +131,102 @@
         "name": "Prototype",
         "description": "Validate an idea fast with a clickable, demo-ready build.",
         "features": [
-          "1–2 week sprint",
-          "Core user flow only",
-          "Ready for user testing"
+          "Defined validation scope",
+          "Agreed core workflow",
+          "User testing"
         ],
-        "price": "From $$$$",
+        "price": "Quoted to scope",
         "cadence": "One-time",
         "stage": "VALIDATE",
-        "duration": "1–2 weeks",
+        "duration": "By agreement",
         "intent": "I want to validate an idea.",
         "receives": "A clickable prototype of the core flow",
         "objective": "Test your idea with users",
         "format": "A sprint with a defined scope",
-        "amount": "$$$$",
+        "amount": "To scope",
         "cta": "Validate my idea"
       },
       "custom": {
         "name": "Custom product",
         "description": "A production-grade product built end to end, from design to deploy.",
         "features": [
-          "Dedicated small team",
-          "Weekly demos",
-          "Launch-ready in 8–12 weeks"
+          "Written scope",
+          "Tests and quality checks",
+          "Documentation and handover"
         ],
-        "price": "From $$$$",
+        "price": "Quoted to scope",
         "cadence": "Per project",
         "stage": "BUILD",
-        "duration": "8–12 weeks",
+        "duration": "By agreement",
         "intent": "I want to launch a product.",
         "receives": "A production-ready product",
         "objective": "Launch and operate your solution",
-        "format": "Dedicated team and weekly demos",
-        "amount": "$$$$",
+        "format": "Agreed capacity and deliverables",
+        "amount": "To scope",
         "cta": "Build my product"
       },
       "team": {
         "name": "Continuous team",
-        "description": "An embedded AI-first engineering team that ships with you every sprint.",
+        "description": "Ongoing engineering collaboration with agreed capacity and terms.",
         "features": [
-          "Senior engineers on retainer",
-          "Async + weekly syncs",
-          "Cancel anytime"
+          "Agreed capacity",
+          "Direct communication",
+          "Written terms"
         ],
-        "price": "From $$$$",
+        "price": "Quoted to scope",
         "cadence": "Per month",
         "stage": "EVOLVE",
-        "duration": "Ongoing",
+        "duration": "By agreement",
         "intent": "I need engineering capacity.",
-        "receives": "Senior engineers embedded in your team",
-        "objective": "Ship improvements every sprint",
-        "format": "Monthly collaboration, cancel anytime",
-        "amount": "$$$$",
+        "receives": "Direct collaboration with the partners",
+        "objective": "Maintain and evolve your application",
+        "format": "Ongoing collaboration by agreement",
+        "amount": "To scope",
         "cta": "Extend my team"
       }
     },
     "titleAccent": "Three ways to start.",
-    "from": "From",
+    "from": "Quote",
     "details": {
       "receives": "You get",
       "objective": "Goal",
       "format": "Format"
     },
-    "scopeNote": "We define the scope with you before we start.",
-    "helpCta": "Not sure which to choose? Let's figure it out"
+    "scopeNote": "Scope, availability, timelines, and terms agreed in writing before work starts. We bill in US dollars.",
+    "helpCta": "Not sure which to choose? Let's figure it out",
+    "navigation": "Choose a service",
+    "position": "Service {current} of {total}"
   },
   "Team": {
     "eyebrow": "Team",
     "title": "Four technical partners, one accountable team",
-    "description": "No account managers in between — you work directly with the people building your product.",
+    "description": "We are four partners in Ecuador, and you work directly with the people building your software. Muyu means seed in Kichwa: something that starts small and is built to last.",
     "members": {
       "one": {
         "name": "Matheo Chávez",
-        "role": "Product & AI systems"
+        "role": "Co-founder & CEO · Full-Stack Engineer"
       },
       "two": {
         "name": "Anthony Cochea",
-        "role": "Frontend engineering"
+        "role": "Co-founder · Backend & Infrastructure Lead"
       },
       "three": {
         "name": "Juan Aristizabal",
-        "role": "Backend & infrastructure"
+        "role": "Co-founder · Frontend & UX Lead"
       },
       "four": {
         "name": "Andrés Loza",
-        "role": "Design & delivery"
+        "role": "Co-founder · QA & Delivery Lead"
       }
     }
   },
   "HowWeStart": {
     "eyebrow": "How we start",
     "title": "A simple first step.",
-    "description": "From the first conversation to software you can try in 14–21 days. Every milestone has a deliverable.",
+    "description": "From the first conversation to a delivery you can try. We agree on scope, dates, and terms before starting.",
     "steps": {
       "one": {
-        "label": "DAY 0 · FREE",
+        "label": "01 · CONVERSATION",
         "title": "Tell us your idea.",
         "description": "30 minutes to understand your goals, constraints, and timeline.",
         "action": "Explore the call agenda",
@@ -229,38 +236,38 @@
         "note": "30 minutes · Free"
       },
       "two": {
-        "label": "DAY 3 · PROPOSAL",
+        "label": "02 · PROPOSAL",
         "title": "Agree on the scope.",
         "description": "You receive a proposal with defined deliverables, timelines, and pricing.",
         "action": "Explore scope and deliverables",
         "kicker": "PROPOSAL",
         "detailTitle": "The scope is put in writing.",
-        "detailDescription": "We agree on what is included, what you receive, and what it costs. Review the proposal before committing to kickoff.",
+        "detailDescription": "We agree on scope, exclusions, completion criteria, and cost. If the problem is not yet clear, we quote a definition phase first.",
         "note": "Defined deliverables, timelines, and pricing"
       },
       "three": {
-        "label": "DAY 7 · KICKOFF",
+        "label": "03 · KICKOFF",
         "title": "We start building.",
-        "description": "After signing and the initial 40% payment, we start that same week.",
+        "description": "We start on the agreed date, with signed scope and an advance or first milestone payment.",
         "action": "Explore the first sprint",
         "kicker": "KICKOFF",
         "detailTitle": "From agreement to the first sprint.",
-        "detailDescription": "With the agreement signed and the initial 40% paid, we start building. Work is organized around a concrete first delivery.",
-        "note": "Indicative day 7 · 40% upfront"
+        "detailDescription": "Signed scope, the agreed initial payment, and team availability determine kickoff. We organize the work around a concrete first delivery.",
+        "note": "Date and terms agreed in writing"
       },
       "four": {
-        "label": "DAY 14–21 · DEMO",
+        "label": "04 · DEMO",
         "title": "Try it for yourself.",
         "description": "Real functionality in a staging environment, ready for your feedback.",
         "action": "Explore how you receive progress",
         "kicker": "DEMO",
         "detailTitle": "Progress you can actually use.",
         "detailDescription": "We share a staging environment so you can explore the flow, test it, and discuss what comes next.",
-        "note": "Indicative days 14–21 · Real software"
+        "note": "Progress on the agreed schedule"
       }
     },
     "titleAccent": "A clear path to your demo.",
-    "timelineNote": "Indicative timeline from the first call, subject to scope and your approval. Deliverable examples are illustrative.",
+    "timelineNote": "Stages depend on the agreed scope and availability. The deliverables shown are illustrative.",
     "cta": "Tell us what you want to build",
     "artifacts": {
       "conversation": {
@@ -322,19 +329,19 @@
         },
         "feedback": {
           "label": "Feedback",
-          "value": "Next iteration ↗"
+          "value": "Next iteration"
         }
       }
     }
   },
   "Work": {
-    "eyebrow": "Selected work",
-    "title": "Software that changes",
-    "titleAccent": "how a business works.",
-    "description": "Two operational challenges. Two products built to solve them.",
-    "explore": "Explore case study",
-    "illustration": "Illustrative reconstruction · Demo data",
-    "carousel": "Selected projects",
+    "eyebrow": "Demonstrations",
+    "title": "Explore how",
+    "titleAccent": "your application could work.",
+    "description": "Two illustrative scenarios to explore interfaces and workflows. They do not represent client projects or measured results.",
+    "explore": "Explore demonstration",
+    "illustration": "Concept demonstration · Fictional data",
+    "carousel": "Application demonstrations",
     "carouselRole": "carousel",
     "slideRole": "slide",
     "trackLabel": "Projects: use the left and right arrow keys to navigate",
@@ -343,7 +350,7 @@
     "choose": "Choose a project",
     "goTo": "View project {number}: {title}",
     "position": "Project {current} of {total}",
-    "hint": "Explore our projects",
+    "hint": "Explore the demonstrations",
     "visual": {
       "procurementAlt": "Illustrative procurement platform interface showing requests and approvals",
       "logisticsAlt": "Illustrative dispatch console with routes and a driver mobile app",
@@ -395,11 +402,11 @@
     "items": {
       "one": {
         "question": "How much does a project cost?",
-        "answer": "It depends on scope. A prototype starts around $$$$, a full custom product around $$$$, and a continuous team runs about $$$$ per month. We give you a fixed number after the discovery call, not a range."
+        "answer": "Pricing depends on scope and availability. After a conversation, we prepare a proposal with deliverables and terms. If the problem needs more definition, we quote that phase first. We bill in US dollars."
       },
       "two": {
         "question": "How long does a typical project take?",
-        "answer": "A prototype ships in one to two weeks. A custom product is usually launch-ready in 8 to 12 weeks. Either way, you see working software in the first sprint, not just mockups."
+        "answer": "We agree on timelines after defining scope and confirming availability. The proposal specifies deliverables and dates; we communicate the impact of risks or scope changes in writing."
       },
       "three": {
         "question": "What technologies do you work with?",
@@ -407,19 +414,19 @@
       },
       "four": {
         "question": "Who owns the code and IP after the project?",
-        "answer": "You do, fully. Once the final invoice is paid, all code, designs, and assets transfer to you — no licensing fees, no vendor lock-in."
+        "answer": "Intellectual property ownership and usage rights are agreed in writing before each project starts. The contract defines what is transferred, what is licensed, and which components each party retains, together with handover and continuity terms. Attribution, such as “Developed by MuyuSoft,” and permission to feature the project in our portfolio are agreed separately."
       },
       "five": {
         "question": "How do we communicate during the project?",
-        "answer": "A shared Slack or Teams channel, weekly demos, and a live project board. You always know what shipped this week and what's next."
+        "answer": "We agree on a communication channel, a contact on each side, and a progress schedule. Decisions, risks, and scope changes are recorded in writing. We coordinate working hours from Ecuador."
       },
       "six": {
         "question": "Do you offer support after launch?",
-        "answer": "Yes. Every project includes a 30-day warranty period for fixes, and most clients move to a monthly retainer for ongoing work after that."
+        "answer": "The contract defines a warranty period for fixing defects attributable to our work at no extra cost. Maintenance and further development are agreed separately. We hand over documentation and access so another team can take over."
       },
       "seven": {
         "question": "How exactly do you use AI in your process?",
-        "answer": "AI pairs with our engineers for code generation, test coverage, and code review — it doesn't replace senior judgment on architecture or product decisions. It's why we ship faster without cutting corners."
+        "answer": "We use AI to assist with code, tests, and documentation. A person reviews and takes responsibility for every change. Architecture and product decisions remain with the team, and quality checks run before delivery."
       }
     }
   },
@@ -429,8 +436,8 @@
     "description": "Tell us what you want to solve. You do not need all the answers to take the first step.",
     "contactInfo": {
       "email": "hello@muyusoft.com",
-      "location": "Ecuador · remote-first, working with US and Europe teams",
-      "responseTime": "We reply within one business day"
+      "location": "From Ecuador · For founders and businesses in Ecuador, the US, and Europe",
+      "responseTime": "One of our four partners replies"
     },
     "fields": {
       "name": "Your name",
@@ -458,7 +465,7 @@
     "submit": "Send inquiry",
     "submitting": "Sending…",
     "successTitle": "Your inquiry is on its way.",
-    "successDescription": "We received your message. We will reply by email within one business day to discuss the next step.",
+    "successDescription": "We received your message. One of our partners will reply by email to discuss the next step.",
     "errorMessage": "Something went wrong sending your message. Please email us directly at",
     "titleAccent": "could be yours.",
     "responseNote": "With a clear next step.",
@@ -507,7 +514,7 @@
     }
   },
   "Footer": {
-    "tagline": "AI-first software studio building for teams in the US and Europe.",
+    "tagline": "Custom software from Ecuador. Four partners, direct collaboration, and applications built to last.",
     "siteColumn": "Site",
     "legalColumn": "Legal",
     "legal": {
@@ -515,23 +522,23 @@
       "terms": "Terms of service",
       "aiPolicy": "AI policy"
     },
-    "copyright": "© {year} Muyusoft. All rights reserved."
+    "copyright": "© {year} MuyuSoft. All rights reserved."
   },
   "PrivacyPage": {
     "title": "Privacy policy",
-    "intro": "We collect only what you send us through the contact form — your name, email, company, and message — to respond to your inquiry. We use Plausible Analytics, which does not use cookies and does not collect personal data. We never sell or share your information with third parties.",
-    "placeholderNotice": "This page is placeholder text. Replace it with a privacy policy reviewed by your legal counsel before launch, especially if you process personal data from EU residents."
+    "intro": "The form collects your name, email, message, service of interest, and optional company and budget. The submission integration uses Web3Forms to process your inquiry. The site may enable Plausible Analytics when configured. For questions about your data, contact hello@muyusoft.com.",
+    "placeholderNotice": "Provisional notice: the privacy policy, including retention, providers, and rights requests, still requires completion and review before final publication."
   },
   "TermsPage": {
     "title": "Terms of service",
-    "intro": "By using this website, you agree to these terms. All content, code samples, and designs on this site are the property of Muyusoft unless otherwise noted.",
-    "placeholderNotice": "This page is placeholder text. Replace it with terms of service reviewed by your legal counsel before launch."
+    "intro": "This site describes our services and demonstrations. Each project’s scope, price, schedule, payments, warranty, intellectual property ownership, and usage rights are agreed in writing in its contract. Demonstrations use fictional scenarios and data.",
+    "placeholderNotice": "Provisional notice: full website terms and contractual conditions are pending review. This summary does not replace each project’s agreement."
   },
   "AiPolicyPage": {
     "title": "AI policy",
     "intro": "We use AI as a tool for our engineers, not a replacement for their judgment.",
-    "practice": "In practice: AI helps us generate boilerplate code, write test coverage, and produce first drafts of components and documentation. Every line that ships is reviewed by a senior engineer before it reaches production — architecture decisions, security-sensitive code, and product tradeoffs are never delegated to AI alone.",
-    "clientData": "Client data: we do not use client code or confidential project information to train AI models. The code assistants we use operate under agreements that exclude training on customer data.",
+    "practice": "AI assists us with code, tests, and documentation. Every change is reviewed by a person who understands it and takes responsibility for it. Technical and product decisions remain the team’s responsibility.",
+    "clientData": "Our principle is to keep sensitive client information out of unapproved AI tools. The operational data and tools policy has yet to be finalized; it must define permitted information, approved tools, and review responsibilities before project data is introduced.",
     "updates": "This policy may be updated as our tools and practices evolve."
   },
   "Testimonials": {

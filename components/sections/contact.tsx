@@ -1,5 +1,6 @@
 ﻿"use client";
 
+import { ArrowIcon } from "@/components/ui/arrow-icon";
 import { useTranslations } from "next-intl";
 import { useEffect, useRef, useState, type FormEvent } from "react";
 import { trackEvent } from "@/lib/analytics";
@@ -122,7 +123,7 @@ export function Contact() {
           <h2 id="contact-title">{t("title")}<br /><span>{t("titleAccent")}</span></h2>
           <p className={styles.contactLead}>{t("description")}</p>
           <div className={styles.promise}>
-            <span className={styles.promiseIcon} aria-hidden="true">↗</span>
+            <span className={styles.promiseIcon} aria-hidden="true"><ArrowIcon /></span>
             <div><strong>{t("contactInfo.responseTime")}</strong><small>{t("responseNote")}</small></div>
           </div>
           <ol className={styles.nextSteps}>
@@ -130,7 +131,7 @@ export function Contact() {
           </ol>
           <div className={styles.direct}>
             <p>{t("directPrompt")}</p>
-            <a href={`mailto:${t("contactInfo.email")}`}>{t("contactInfo.email")} <span aria-hidden="true">↗</span></a>
+            <a href={`mailto:${t("contactInfo.email")}`}>{t("contactInfo.email")} <span aria-hidden="true"><ArrowIcon /></span></a>
             <small>{t("contactInfo.location")}</small>
           </div>
         </div>
@@ -180,7 +181,7 @@ export function Contact() {
                 </div>
               </details>
               <button className={styles.submit} type="submit" disabled={status === "submitting"}>
-                <span>{status === "submitting" ? t("submitting") : t("submit")}</span><span aria-hidden="true">↗</span>
+                <span>{status === "submitting" ? t("submitting") : t("submit")}</span><span aria-hidden="true"><ArrowIcon /></span>
               </button>
             </fieldset>
             <p className={styles.formEnd}>{t("dataNote")}</p>

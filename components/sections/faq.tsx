@@ -1,3 +1,4 @@
+import { ArrowIcon } from "@/components/ui/arrow-icon";
 import { useTranslations } from "next-intl";
 import { Accordion } from "@/components/ui/accordion";
 import styles from "./faq.module.css";
@@ -39,7 +40,7 @@ export function Faq() {
           <p className={styles.description}>{t("description")}</p>
           <div className={styles.contact}>
             <p>{t("contactPrompt")}</p>
-            <a href="#contact">{t("contactCta")} <span aria-hidden="true">↗</span></a>
+            <a href="#contact">{t("contactCta")} <span aria-hidden="true"><ArrowIcon /></span></a>
           </div>
         </div>
         <div data-section-enter="" className={styles.questions}>

@@ -1,0 +1,9 @@
+.panel {
+  display: grid;
+  grid-template-rows: 0fr;
+  opacity: 0;
+  transition: grid-template-rows 420ms cubic-bezier(.2,.7,.3,1), opacity 280ms ease;
+}
+.panel[data-open="true"] { grid-template-rows: 1fr; opacity: 1; }
+.clip { min-height: 0; overflow: hidden; }
+@media (prefers-reduced-motion: reduce) { .panel { transition: none; } }

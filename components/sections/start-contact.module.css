@@ -149,7 +149,14 @@
 }
 
 .deliverableTag:before {
-  content: '↗';
+  content: '';
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  flex-shrink: 0;
+  background: currentColor;
+  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 18 18 6M6 6h12v12'/%3E%3C/svg%3E") center / contain no-repeat;
+  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 18 18 6M6 6h12v12'/%3E%3C/svg%3E") center / contain no-repeat;
   color: var(--blue);
   margin-right: 7px;
 }
@@ -1090,3 +1097,24 @@ textarea.control {
     transition: none !important;
   }
 }
+
+@media (max-width:760px) {
+  .stepButton { width: 100%; min-height: 44px; text-align: left; }
+  .stepButton[aria-expanded="true"] .node { background: var(--blue); color: var(--bg); }
+  .stepButton[aria-expanded="true"] .deliverableTag { color: var(--blue); }
+  .mobileExpansion {
+    margin-left: -48px;
+    /* The connector is positioned too; paint the expanding card above it. */
+    position: relative;
+    z-index: 1;
+  }
+  .milestone .detailPanel { margin-left: 0; margin-top: 18px; }
+  .milestone .detailCopy { padding: 20px; }
+  .milestone .detailCopy > p { font-size: 14px; }
+  .milestone .artifactArea { padding: 18px; }
+}
+
+.mobileStepTitle { display: flex; justify-content: space-between; gap: 12px; margin-top: 9px; font-size: 19px; line-height: 1.35; color: var(--color-fg); }
+.mobileStepTitle > span { flex-shrink: 0; color: var(--blue); }
+
+@media (max-width:760px) { .timeline { overflow-anchor: none; } }

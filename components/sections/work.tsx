@@ -1,4 +1,5 @@
-﻿import { useLocale, useTranslations } from "next-intl";
+﻿import { ArrowIcon } from "@/components/ui/arrow-icon";
+import { useLocale, useTranslations } from "next-intl";
 import type { Locale } from "@/i18n/routing";
 import { Link } from "@/lib/i18n";
 import { getAllWorkItems } from "@/lib/work";
@@ -29,11 +30,11 @@ export function Work() {
                   <h3>{preview?.title ?? item.title}</h3>
                   <p className={styles.caseDescription}>{preview?.description ?? item.excerpt}</p>
                   {preview && <div className={styles.result}>
-                    <p className={styles.resultValue}>{preview.before} <span aria-hidden="true">→</span> <strong>{preview.after}</strong></p>
+                    <p className="text-lg font-semibold leading-relaxed text-fg">{preview.before} <span aria-hidden="true"><ArrowIcon direction="right" /></span> <strong>{preview.after}</strong></p>
                     <p className={styles.resultLabel}>{preview.result}</p>
                   </div>}
-                  <p className={styles.caseMeta}>{item.stack.join(" · ")} &nbsp; / &nbsp; {item.year}</p>
-                  <Link href={`/work/${item.slug}`} className={styles.caseCta}>{t("explore")} <span aria-hidden="true">↗</span></Link>
+                  <p className={styles.caseMeta}>{item.stack.join(" · ")}{item.year ? ` / ${item.year}` : ""}</p>
+                  <Link href={`/work/${item.slug}`} className={styles.caseCta}>{t("explore")} <span aria-hidden="true"><ArrowIcon /></span></Link>
                 </div>
               </article>
             );

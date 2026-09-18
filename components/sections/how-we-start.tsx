@@ -1,7 +1,10 @@
 "use client";
 
+import { ExpandingPanel } from "@/components/ui/expanding-panel";
+import { useAccordionAnchor } from "@/hooks/use-accordion-anchor";
+import { ArrowIcon } from "@/components/ui/arrow-icon";
 import { useTranslations } from "next-intl";
-import { useRef, useState, useSyncExternalStore } from "react";
+import { useState, useSyncExternalStore } from "react";
 import { StartArtifact } from "./start-artifact";
 import styles from "./start-contact.module.css";
 
@@ -28,32 +31,31 @@ export function HowWeStart() {
   const t = useTranslations("HowWeStart");
   const [active, setActive] = useState(0);
   const isMobile = useIsMobile();
-  const panelRef = useRef<HTMLDivElement>(null);
-  const key = STEPS[active];
+  const [mobileOpen, setMobileOpen] = useState(true);
+  const anchor = useAccordionAnchor();
 
-  function activate(index: number) {
+  function activate(index: number, button: HTMLButtonElement) {
+    if (isMobile) {
+      anchor(button);
+      setMobileOpen(active === index ? !mobileOpen : true);
+    }
     setActive(index);
-    if (!isMobile) return;
-    requestAnimationFrame(() => {
-      panelRef.current?.focus({ preventScroll: true });
-      panelRef.current?.scrollIntoView({
-        behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "instant" : "smooth",
-        block: "nearest",
-      });
-    });
   }
 
-  const detail = (
-    <section ref={panelRef} id="start-detail" data-section-enter="" className={styles.detailPanel} aria-labelledby="start-detail-title" tabIndex={-1}>
-      <div className={styles.detailCopy} aria-live="polite" aria-atomic="true">
-        <p className={styles.detailKicker}>0{active + 1} / {t(`steps.${key}.kicker`)}</p>
-        <h3 id="start-detail-title">{t(`steps.${key}.detailTitle`)}</h3>
-        <p>{t(`steps.${key}.detailDescription`)}</p>
-        <div className={styles.detailBottom}><i aria-hidden="true" /><span>{t(`steps.${key}.note`)}</span></div>
+  function detail(index: number, desktop = false) {
+    const key = STEPS[index];
+    return (
+      <div id={desktop ? "start-detail" : undefined} className={styles.detailPanel}>
+        <div className={styles.detailCopy}>
+          <p className={styles.detailKicker}>0{index + 1} / {t(`steps.${key}.kicker`)}</p>
+          <h3>{t(`steps.${key}.detailTitle`)}</h3>
+          <p>{t(`steps.${key}.detailDescription`)}</p>
+          <div className={styles.detailBottom}><i aria-hidden="true" /><span>{t(`steps.${key}.note`)}</span></div>
+        </div>
+        <div className={styles.artifactArea}><StartArtifact index={index} /></div>
       </div>
-      <div className={styles.artifactArea}><StartArtifact key={key} index={active} /></div>
-    </section>
-  );
+    );
+  }
 
   return (
     <section id="how-we-start" aria-labelledby="start-title" className={styles.section}>
@@ -66,21 +68,21 @@ export function HowWeStart() {
         <ol data-section-enter="" className={styles.timeline}>
           {STEPS.map((step, index) => (
             <li key={step} className={styles.milestone}>
-              <button type="button" className={styles.stepButton} aria-pressed={active === index} aria-controls="start-detail" onClick={() => activate(index)}>
+              <button id={`start-step-${index}`} type="button" className={styles.stepButton} aria-pressed={!isMobile ? active === index : undefined} aria-expanded={isMobile ? active === index && mobileOpen : undefined} aria-controls={isMobile ? `start-panel-${index}` : "start-detail"} onClick={(event) => activate(index, event.currentTarget)}>
                 <span className={styles.node} aria-hidden="true">0{index + 1}</span>
                 <span className={styles.day}>{t(`steps.${step}.label`)}</span>
-                <span className={styles.deliverableTag}>{t(`steps.${step}.action`)}</span>
+                {isMobile ? <span className={styles.mobileStepTitle}>{t(`steps.${step}.title`)}<span aria-hidden="true">{active === index && mobileOpen ? "−" : "+"}</span></span> : <span className={styles.deliverableTag}>{t(`steps.${step}.action`)}</span>}
               </button>
-              <h3>{t(`steps.${step}.title`)}</h3>
+              {!isMobile && <h3>{t(`steps.${step}.title`)}</h3>}
               <p>{t(`steps.${step}.description`)}</p>
-              {isMobile && active === index && detail}
+              {isMobile && <ExpandingPanel className={styles.mobileExpansion} id={`start-panel-${index}`} labelledBy={`start-step-${index}`} open={active === index && mobileOpen}>{detail(index)}</ExpandingPanel>}
             </li>
           ))}
         </ol>
-        {!isMobile && detail}
+        {!isMobile && detail(active, true)}
         <div className={styles.processFoot}>
           <p>{t("timelineNote")}</p>
-          <a className={styles.textLink} href="#contact">{t("cta")} <span aria-hidden="true">↗</span></a>
+          <a className={styles.textLink} href="#contact">{t("cta")} <span aria-hidden="true"><ArrowIcon /></span></a>
         </div>
       </div>
     </section>

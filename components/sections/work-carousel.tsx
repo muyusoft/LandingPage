@@ -1,5 +1,6 @@
 "use client";
 
+import { ArrowIcon } from "@/components/ui/arrow-icon";
 import { useEffect, useRef, useState, type ReactNode } from "react";
 import { useTranslations } from "next-intl";
 import styles from "./showcase.module.css";
@@ -94,8 +95,8 @@ export function WorkCarousel({ children, labels }: { children: ReactNode[]; labe
           <div className={styles.carouselDots} role="group" aria-label={t("choose")}>
             {labels.map((label, index) => <button key={label} type="button" className={styles.carouselDot} onClick={() => goTo(index)} aria-label={t("goTo", { number: index + 1, title: label })} aria-current={index === active ? "true" : undefined} aria-controls="work-track" />)}
           </div>
-          <button type="button" className={styles.carouselArrow} onClick={() => goTo(activeRef.current - 1)} disabled={active === 0} aria-label={t("previous")} aria-controls="work-track">←</button>
-          <button type="button" className={styles.carouselArrow} onClick={() => goTo(activeRef.current + 1)} disabled={active === children.length - 1} aria-label={t("next")} aria-controls="work-track">→</button>
+          <button type="button" className={styles.carouselArrow} onClick={() => goTo(activeRef.current - 1)} disabled={active === 0} aria-label={t("previous")} aria-controls="work-track"><ArrowIcon direction="left" /></button>
+          <button type="button" className={styles.carouselArrow} onClick={() => goTo(activeRef.current + 1)} disabled={active === children.length - 1} aria-label={t("next")} aria-controls="work-track"><ArrowIcon direction="right" /></button>
         </div>
       </div>}
     </div>

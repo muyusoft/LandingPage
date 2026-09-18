@@ -82,7 +82,7 @@ export default async function WorkCaseStudyPage({
     <article className="px-6 py-24">
       <header className="mx-auto max-w-[68ch]">
         <p className="text-xs uppercase tracking-[.08em] text-dim">
-          {frontmatter.client} · {frontmatter.year}
+          {frontmatter.client}{frontmatter.year ? ` · ${frontmatter.year}` : ""}
         </p>
         <h1 className="mt-2 text-4xl font-semibold -tracking-[.035em] text-fg">
           {frontmatter.title}

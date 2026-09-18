@@ -1,10 +1,10 @@
 {
   "HomeMetadata": {
-    "title": "Muyusoft — Estudio de software AI-first",
-    "description": "Diseñamos y construimos software con IA en el centro, trabajando con equipos en EE. UU. y Europa del prototipo a producción."
+    "title": "MuyuSoft — Software a medida, hecho para durar",
+    "description": "Cuatro ingenieros socios en Ecuador. Software a medida con alcance escrito, pruebas y documentación para que otro equipo pueda continuarlo."
   },
   "Organization": {
-    "description": "Estudio de software AI-first, trabajando con equipos en EE. UU. y Europa, del prototipo a producción."
+    "description": "Equipo de cuatro socios en Ecuador que desarrolla software a medida para fundadores y empresas de Ecuador, Estados Unidos y Europa."
   },
   "Nav": {
     "primary": "Navegación principal",
@@ -13,22 +13,27 @@
     "approach": "Enfoque",
     "services": "Servicios",
     "team": "Equipo",
-    "work": "Trabajo",
+    "work": "Demostraciones",
     "howWeStart": "Cómo empezamos",
     "faq": "Preguntas",
-    "contact": "Contacto"
+    "contact": "Contacto",
+    "menu": "Menú",
+    "close": "Cerrar",
+    "explore": "Explora MuyuSoft",
+    "contactCta": "Hablemos de tu proyecto",
+    "language": "Idioma"
   },
   "Hero": {
-    "eyebrow": "Estudio de software AI-first",
-    "title": "Diseñamos y construimos software con IA en el centro.",
-    "description": "Muyusoft trabaja con equipos en EE. UU. y Europa para convertir ideas en productos listos para producción — desde el primer prototipo hasta un equipo de ingeniería continuo.",
+    "eyebrow": "Software a medida · Desde Ecuador",
+    "title": "Software a medida, construido para durar.",
+    "description": "Somos cuatro ingenieros socios. Trabajas directamente con quienes construyen tu aplicación, con alcance escrito, pruebas y documentación para que otro equipo pueda continuarla.",
     "ctaPrimary": "Agenda una llamada",
-    "ctaSecondary": "Ver nuestro trabajo"
+    "ctaSecondary": "Explorar demostraciones"
   },
   "Pitch": {
     "eyebrow": "Nuestro enfoque",
     "title": "Cómo construimos en realidad",
-    "description": "Sin specs de 40 páginas, sin diapositivas de roadmap que fingen ser avance — solo software que puedes ver y usar, cada semana.",
+    "description": "Alcance claro por escrito, controles de calidad antes de entregar y avances que puedes probar. Las decisiones y los riesgos quedan documentados.",
     "visual": {
       "illustrative": "Proyecto ilustrativo",
       "demo": "DEMO ILUSTRATIVA",
@@ -40,7 +45,7 @@
       "briefDescription": "Un lugar para recibir, revisar y dar seguimiento a cada pedido del equipo.",
       "portal": "Portal de solicitudes",
       "prototype": "Primer prototipo",
-      "weekly": "Demo semanal",
+      "weekly": "Demo de avance",
       "requests": "Solicitudes",
       "new": "Nueva",
       "designTeam": "Equipo de diseño",
@@ -62,8 +67,8 @@
       "feedback": "¿Podemos filtrar por equipo?",
       "feedbackContext": "Feedback sobre el producto · Próxima iteración",
       "deliveryLabel": "Listo para seguir creciendo",
-      "deliveryTitle": "Tu producto. Tus llaves.",
-      "deliveryCopy": "Todo lo necesario para continuar con autonomía.",
+      "deliveryTitle": "Una entrega con condiciones claras.",
+      "deliveryCopy": "Documentación y accesos según el alcance acordado.",
       "deliverables": {
         "code": {
           "title": "Código fuente",
@@ -83,36 +88,36 @@
         }
       },
       "ready": "Preparado para entregar",
-      "ownership": "Propiedad del cliente"
+      "ownership": "Derechos según contrato"
     },
     "steps": {
       "one": {
         "label": "Idea",
-        "outcome": "Del brief a una primera versión usable",
+        "outcome": "Del problema a un alcance acordado",
         "caption": "Una idea empieza a tomar forma",
-        "title": "Entra la idea, sale software funcionando",
-        "description": "Un brief corto y una llamada bastan para empezar a escribir código real en días, no meses."
+        "title": "Primero entendemos, luego construimos",
+        "description": "Conversamos sobre el problema y acordamos el alcance antes de escribir código. Si hace falta definirlo mejor, proponemos una fase de definición pagada."
       },
       "two": {
         "label": "Criterio",
         "outcome": "Velocidad con responsabilidad técnica",
         "caption": "La decisión final sigue siendo humana",
         "title": "La IA redacta, los ingenieros deciden",
-        "description": "Usamos IA para generar código base, pruebas y primeros borradores — luego un ingeniero senior revisa cada línea antes de que salga a producción."
+        "description": "La IA apoya el trabajo. Un ingeniero revisa y comprende cada cambio; las pruebas y los controles automáticos de calidad son condición para entregar."
       },
       "three": {
         "label": "Visibilidad",
         "outcome": "Un producto que puedes probar y comentar",
-        "caption": "Cada semana, algo que puedes usar",
+        "caption": "Avances que puedes probar",
         "title": "Lo ves antes de preguntar",
-        "description": "Demos semanales sobre software real corriendo en un entorno de staging que puedes recorrer tú mismo."
+        "description": "Compartimos avances que puedes probar y documentamos decisiones, riesgos y cambios de alcance. Acordamos contigo la cadencia de las demos."
       },
       "four": {
         "label": "Entrega",
         "outcome": "Autonomía para decidir el siguiente paso",
         "caption": "Todo listo para que puedas continuar",
         "title": "Construido para entregarse limpio",
-        "description": "Documentado, probado y tuyo para quedarte — ya sea que lo lleves in-house después del lanzamiento o sigas trabajando con nosotros."
+        "description": "Acordamos la documentación, las pruebas y los accesos necesarios para operar y continuar el sistema. La propiedad intelectual y los derechos de uso se definen en cada contrato."
       }
     }
   },
@@ -126,100 +131,102 @@
         "name": "Prototipo",
         "description": "Valida una idea rápido con una versión clicable, lista para demo.",
         "features": [
-          "Sprint de 1–2 semanas",
-          "Solo el flujo principal",
-          "Lista para pruebas con usuarios"
+          "Alcance de validación definido",
+          "Flujo principal acordado",
+          "Pruebas con usuarios"
         ],
-        "price": "Desde $$$$",
+        "price": "Cotización según alcance",
         "cadence": "Pago único",
         "stage": "VALIDAR",
-        "duration": "1–2 semanas",
+        "duration": "A acordar",
         "intent": "Quiero validar una idea.",
         "receives": "Un prototipo clicable del flujo principal",
         "objective": "Probar la idea con usuarios",
         "format": "Sprint de alcance definido",
-        "amount": "$$$$",
+        "amount": "Según alcance",
         "cta": "Validar mi idea"
       },
       "custom": {
         "name": "Producto a medida",
         "description": "Un producto listo para producción, construido de punta a punta.",
         "features": [
-          "Equipo pequeño dedicado",
-          "Demos semanales",
-          "Listo para lanzar en 8–12 semanas"
+          "Alcance escrito",
+          "Pruebas y controles de calidad",
+          "Documentación y traspaso"
         ],
-        "price": "Desde $$$$",
+        "price": "Cotización según alcance",
         "cadence": "Por proyecto",
         "stage": "CONSTRUIR",
-        "duration": "8–12 semanas",
+        "duration": "A acordar",
         "intent": "Quiero lanzar un producto.",
         "receives": "Un producto listo para producción",
         "objective": "Lanzar y operar tu solución",
-        "format": "Equipo dedicado y demos semanales",
-        "amount": "$$$$",
+        "format": "Capacidad y entregas acordadas",
+        "amount": "Según alcance",
         "cta": "Construir mi producto"
       },
       "team": {
         "name": "Equipo continuo",
-        "description": "Un equipo de ingeniería AI-first integrado que entrega en cada sprint.",
+        "description": "Colaboración técnica continua con capacidad y condiciones acordadas.",
         "features": [
-          "Ingenieros senior integrados a tu equipo",
-          "Async + sincronías semanales",
-          "Cancela cuando quieras"
+          "Capacidad acordada",
+          "Comunicación directa",
+          "Condiciones por escrito"
         ],
-        "price": "Desde $$$$",
+        "price": "Cotización según alcance",
         "cadence": "Por mes",
         "stage": "EVOLUCIONAR",
-        "duration": "Continuo",
+        "duration": "A acordar",
         "intent": "Necesito capacidad de ingeniería.",
-        "receives": "Ingenieros senior integrados a tu equipo",
-        "objective": "Entregar mejoras en cada sprint",
-        "format": "Colaboración mensual, cancelable",
-        "amount": "$$$$",
+        "receives": "Colaboración directa con los socios",
+        "objective": "Mantener y evolucionar tu aplicación",
+        "format": "Continuidad bajo acuerdo",
+        "amount": "Según alcance",
         "cta": "Ampliar mi equipo"
       }
     },
     "titleAccent": "Tres formas de empezar.",
-    "from": "Desde",
+    "from": "Cotización",
     "details": {
       "receives": "Recibes",
       "objective": "Objetivo",
       "format": "Formato"
     },
-    "scopeNote": "El alcance se define contigo antes de empezar.",
-    "helpCta": "¿Todavía no sabes cuál elegir? Lo vemos juntos"
+    "scopeNote": "Alcance, disponibilidad, plazos y condiciones por escrito antes de empezar. Facturamos en dólares.",
+    "helpCta": "¿Todavía no sabes cuál elegir? Lo vemos juntos",
+    "navigation": "Elegir servicio",
+    "position": "Servicio {current} de {total}"
   },
   "Team": {
     "eyebrow": "Equipo",
     "title": "Cuatro socios técnicos, un solo equipo responsable",
-    "description": "Sin gerentes de cuenta de por medio — trabajas directo con quienes construyen tu producto.",
+    "description": "Somos cuatro socios en Ecuador y trabajas directamente con quienes construyen. Muyu significa semilla en kichwa: algo que empieza pequeño y está hecho para durar.",
     "members": {
       "one": {
         "name": "Matheo Chávez",
-        "role": "Producto y sistemas de IA"
+        "role": "Co-fundador y CEO · Full-Stack Engineer"
       },
       "two": {
         "name": "Anthony Cochea",
-        "role": "Ingeniería frontend"
+        "role": "Co-fundador · Líder de Backend e Infraestructura"
       },
       "three": {
         "name": "Juan Aristizabal",
-        "role": "Backend e infraestructura"
+        "role": "Co-fundador · Líder de Frontend y UX"
       },
       "four": {
         "name": "Andrés Loza",
-        "role": "Diseño y entrega"
+        "role": "Co-fundador · Líder de QA y Entregas"
       }
     }
   },
   "HowWeStart": {
     "eyebrow": "Cómo empezamos",
     "title": "Un primer paso sencillo.",
-    "description": "De la primera conversación a software que puedes probar, en 14–21 días. Cada hito tiene un entregable.",
+    "description": "De la primera conversación a una entrega que puedes probar. Acordamos el alcance, las fechas y las condiciones antes de empezar.",
     "steps": {
       "one": {
-        "label": "DÍA 0 · SIN COSTO",
+        "label": "01 · CONVERSACIÓN",
         "title": "Nos cuentas la idea.",
         "description": "30 minutos para entender tus objetivos, restricciones y plazos.",
         "action": "Ver agenda de la llamada",
@@ -229,38 +236,38 @@
         "note": "30 minutos · Sin costo"
       },
       "two": {
-        "label": "DÍA 3 · PROPUESTA",
+        "label": "02 · PROPUESTA",
         "title": "Acordamos el alcance.",
         "description": "Recibes una propuesta con entregables, tiempos y precio definidos.",
         "action": "Ver alcance y entregables",
         "kicker": "PROPUESTA",
         "detailTitle": "El alcance queda por escrito.",
-        "detailDescription": "Acordamos qué entra, qué se entrega y cuánto cuesta. Puedes revisar la propuesta antes de comprometerte con el arranque.",
+        "detailDescription": "Acordamos qué entra, qué queda fuera, qué significa terminado y cuánto cuesta. Si el problema aún no está claro, cotizamos primero una fase de definición.",
         "note": "Entregables, tiempos y precio definidos"
       },
       "three": {
-        "label": "DÍA 7 · ARRANQUE",
+        "label": "03 · ARRANQUE",
         "title": "Empezamos a construir.",
-        "description": "Tras la firma y el 40% inicial, arrancamos esa misma semana.",
+        "description": "Comenzamos en la fecha acordada, con alcance firmado y anticipo o primer hito pagado.",
         "action": "Ver el primer sprint",
         "kicker": "ARRANQUE",
         "detailTitle": "Del acuerdo al primer sprint.",
-        "detailDescription": "Con la firma y el 40% inicial, comenzamos a construir. El trabajo se organiza alrededor de una primera entrega concreta.",
-        "note": "Día 7 de referencia · 40% inicial"
+        "detailDescription": "El alcance firmado, el pago inicial acordado y la disponibilidad del equipo definen el arranque. Organizamos el trabajo alrededor de una primera entrega concreta.",
+        "note": "Fecha y condiciones acordadas por escrito"
       },
       "four": {
-        "label": "DÍA 14–21 · DEMO",
+        "label": "04 · DEMO",
         "title": "Lo pruebas tú mismo.",
         "description": "Funcionalidad real en un entorno de staging, lista para tu feedback.",
         "action": "Ver cómo recibes el avance",
         "kicker": "DEMO",
         "detailTitle": "El avance ya se puede usar.",
         "detailDescription": "Te compartimos un entorno de staging para recorrer el flujo construido, probarlo y comentar lo que sigue.",
-        "note": "Días 14–21 de referencia · Software real"
+        "note": "Avances según la cadencia acordada"
       }
     },
     "titleAccent": "Un camino claro hasta la demo.",
-    "timelineNote": "Cronograma de referencia desde la llamada inicial, sujeto al alcance y a tu aprobación. Los ejemplos de entregables son ilustrativos.",
+    "timelineNote": "Las etapas se ajustan al alcance y a la disponibilidad acordada. Los entregables mostrados son ilustrativos.",
     "cta": "Cuéntanos qué quieres construir",
     "artifacts": {
       "conversation": {
@@ -322,19 +329,19 @@
         },
         "feedback": {
           "label": "Feedback",
-          "value": "Próxima iteración ↗"
+          "value": "Próxima iteración"
         }
       }
     }
   },
   "Work": {
-    "eyebrow": "Trabajo seleccionado",
-    "title": "Software que cambia",
-    "titleAccent": "cómo funciona un negocio.",
-    "description": "Dos problemas operativos. Dos productos construidos para resolverlos.",
-    "explore": "Explorar caso",
-    "illustration": "Reconstrucción ilustrativa · Datos de demostración",
-    "carousel": "Proyectos seleccionados",
+    "eyebrow": "Demostraciones",
+    "title": "Así puede verse",
+    "titleAccent": "tu próxima aplicación.",
+    "description": "Dos escenarios ilustrativos para explorar interfaces y flujos. No representan proyectos de clientes ni resultados medidos.",
+    "explore": "Explorar demostración",
+    "illustration": "Demostración conceptual · Datos ficticios",
+    "carousel": "Demostraciones de aplicaciones",
     "carouselRole": "carrusel",
     "slideRole": "diapositiva",
     "trackLabel": "Proyectos: usa las flechas izquierda y derecha para navegar",
@@ -343,7 +350,7 @@
     "choose": "Elegir proyecto",
     "goTo": "Ver proyecto {number}: {title}",
     "position": "Proyecto {current} de {total}",
-    "hint": "Explora nuestros proyectos",
+    "hint": "Explora las demostraciones",
     "visual": {
       "procurementAlt": "Interfaz ilustrativa de una plataforma de compras con solicitudes y aprobaciones",
       "logisticsAlt": "Interfaz ilustrativa de una consola de despacho con rutas y una app móvil de conductor",
@@ -395,11 +402,11 @@
     "items": {
       "one": {
         "question": "¿Cuánto cuesta un proyecto?",
-        "answer": "Depende del alcance. Un prototipo arranca cerca de $$$$$, un producto a medida completo cerca de $$$$$, y un equipo continuo ronda los $$$$$ al mes. Te damos un número fijo después de la llamada de descubrimiento, no un rango."
+        "answer": "El precio depende del alcance y la disponibilidad. Tras conversar, preparamos una propuesta con entregables y condiciones. Si el problema necesita más definición, cotizamos primero esa fase. Facturamos en dólares."
       },
       "two": {
         "question": "¿Cuánto dura un proyecto típico?",
-        "answer": "Un prototipo se entrega en una a dos semanas. Un producto a medida suele estar listo para lanzar en 8 a 12 semanas. En cualquier caso, ves software funcionando en el primer sprint, no solo mockups."
+        "answer": "Acordamos los plazos después de definir el alcance y confirmar disponibilidad. La propuesta indica entregables y fechas; si aparece un riesgo o cambia el alcance, comunicamos su impacto por escrito."
       },
       "three": {
         "question": "¿Con qué tecnologías trabajan?",
@@ -407,19 +414,19 @@
       },
       "four": {
         "question": "¿Quién es dueño del código y la propiedad intelectual después del proyecto?",
-        "answer": "Tú, completamente. Una vez pagada la factura final, todo el código, diseños y activos pasan a ti — sin licencias ni dependencia de proveedor."
+        "answer": "La propiedad intelectual y los derechos de uso se acuerdan por escrito antes de comenzar cada proyecto. El contrato define qué se transfiere, qué se licencia y qué componentes conserva cada parte, junto con las condiciones de entrega y continuidad. Los créditos de autoría, como «Desarrollado por MuyuSoft», y el permiso para mostrar el proyecto en nuestro portafolio se acuerdan por separado."
       },
       "five": {
         "question": "¿Cómo nos comunicamos durante el proyecto?",
-        "answer": "Un canal compartido de Slack o Teams, demos semanales y un tablero de proyecto en vivo. Siempre sabes qué se entregó esta semana y qué sigue."
+        "answer": "Acordamos un canal de comunicación, una persona de contacto de cada lado y una cadencia de avances. Las decisiones, los riesgos y los cambios de alcance quedan por escrito. Coordinamos horarios de colaboración desde Ecuador."
       },
       "six": {
         "question": "¿Dan soporte después del lanzamiento?",
-        "answer": "Sí. Todo proyecto incluye 30 días de garantía para correcciones, y la mayoría de los clientes pasan a un retainer mensual para trabajo continuo después de eso."
+        "answer": "El contrato define un periodo de garantía para corregir sin costo los defectos atribuibles a nuestro trabajo. Después, el mantenimiento y la evolución se acuerdan por separado. Entregamos documentación y accesos para que puedas continuar con otro equipo."
       },
       "seven": {
         "question": "¿Cómo usan exactamente la IA en su proceso?",
-        "answer": "La IA trabaja junto a nuestros ingenieros en generación de código, cobertura de pruebas y revisión de código — no reemplaza el criterio senior en arquitectura o decisiones de producto. Por eso entregamos más rápido sin recortar calidad."
+        "answer": "Usamos IA como apoyo para código, pruebas y documentación. Una persona revisa y responde por cada cambio. La arquitectura y las decisiones de producto quedan en manos del equipo, y los controles de calidad se aplican antes de entregar."
       }
     }
   },
@@ -429,8 +436,8 @@
     "description": "Cuéntanos qué quieres resolver. No hace falta tener todo definido para dar el primer paso.",
     "contactInfo": {
       "email": "hello@muyusoft.com",
-      "location": "Ecuador · remoto, trabajando con equipos en EE. UU. y Europa",
-      "responseTime": "Respondemos en un día hábil"
+      "location": "Desde Ecuador · Para fundadores y empresas de Ecuador, EE. UU. y Europa",
+      "responseTime": "Te responde uno de los cuatro socios"
     },
     "fields": {
       "name": "Tu nombre",
@@ -458,7 +465,7 @@
     "submit": "Enviar consulta",
     "submitting": "Enviando…",
     "successTitle": "Tu consulta está en camino.",
-    "successDescription": "Recibimos tu mensaje. Te responderemos por correo en un día hábil para conversar sobre el siguiente paso.",
+    "successDescription": "Recibimos tu mensaje. Uno de los socios te responderá por correo para conversar sobre el siguiente paso.",
     "errorMessage": "Algo salió mal al enviar tu mensaje. Escríbenos directo a",
     "titleAccent": "puede ser la tuya.",
     "responseNote": "Con un siguiente paso claro.",
@@ -507,7 +514,7 @@
     }
   },
   "Footer": {
-    "tagline": "Estudio de software AI-first, construyendo para equipos en EE. UU. y Europa.",
+    "tagline": "Software a medida desde Ecuador. Cuatro socios, trato directo y aplicaciones hechas para durar.",
     "siteColumn": "Sitio",
     "legalColumn": "Legal",
     "legal": {
@@ -515,23 +522,23 @@
       "terms": "Términos de servicio",
       "aiPolicy": "Política de IA"
     },
-    "copyright": "© {year} Muyusoft. Todos los derechos reservados."
+    "copyright": "© {year} MuyuSoft. Todos los derechos reservados."
   },
   "PrivacyPage": {
     "title": "Política de privacidad",
-    "intro": "Solo recopilamos lo que nos envías por el formulario de contacto — tu nombre, correo, empresa y mensaje — para responder tu consulta. Usamos Plausible Analytics, que no usa cookies ni recopila datos personales. Nunca vendemos ni compartimos tu información con terceros.",
-    "placeholderNotice": "Esta página es texto de relleno. Reemplázala con una política de privacidad revisada por tu asesoría legal antes de publicar, especialmente si procesas datos personales de residentes de la UE."
+    "intro": "El formulario recoge nombre, correo, mensaje, servicio de interés y, si los proporcionas, empresa y presupuesto. La integración de envío utiliza Web3Forms para tramitar la consulta. El sitio puede activar Plausible Analytics si está configurado. Para consultas sobre tus datos, escribe a hello@muyusoft.com.",
+    "placeholderNotice": "Aviso provisional: falta completar y revisar la política de privacidad, incluidos conservación, proveedores y ejercicio de derechos, antes de su publicación definitiva."
   },
   "TermsPage": {
     "title": "Términos de servicio",
-    "intro": "Al usar este sitio, aceptas estos términos. Todo el contenido, código de muestra y diseños de este sitio son propiedad de Muyusoft salvo que se indique lo contrario.",
-    "placeholderNotice": "Esta página es texto de relleno. Reemplázala con términos de servicio revisados por tu asesoría legal antes de publicar."
+    "intro": "La información de este sitio describe nuestros servicios y demostraciones. El alcance, precio, plazos, pagos, garantía, propiedad intelectual y derechos de uso de cada proyecto se acuerdan por escrito en su contrato. Las demostraciones utilizan escenarios y datos ficticios.",
+    "placeholderNotice": "Aviso provisional: los términos completos del sitio y las condiciones contractuales están pendientes de revisión. Este resumen no sustituye el acuerdo de cada proyecto."
   },
   "AiPolicyPage": {
     "title": "Política de IA",
     "intro": "Usamos la IA como una herramienta para nuestros ingenieros, no como reemplazo de su criterio.",
-    "practice": "En la práctica: la IA nos ayuda a generar código base, escribir cobertura de pruebas y producir primeros borradores de componentes y documentación. Cada línea que sale a producción es revisada por un ingeniero senior antes de llegar ahí — las decisiones de arquitectura, el código sensible en seguridad y las decisiones de producto nunca se delegan solo a la IA.",
-    "clientData": "Datos del cliente: no usamos código de clientes ni información confidencial de proyectos para entrenar modelos de IA. Los asistentes de código que usamos operan bajo acuerdos que excluyen el entrenamiento con datos de clientes.",
+    "practice": "La IA nos apoya en código, pruebas y documentación. Cada cambio se revisa por una persona que lo comprende y responde por él. Las decisiones técnicas y de producto siguen siendo responsabilidad del equipo.",
+    "clientData": "Nuestro principio es no introducir información sensible del cliente en herramientas de IA no aprobadas. La política operativa de datos y herramientas está pendiente de formalización; debe definir la información permitida, las herramientas autorizadas y quién revisa su uso antes de incorporar datos de un proyecto.",
     "updates": "Esta política puede actualizarse conforme evolucionen nuestras herramientas y prácticas."
   },
   "Testimonials": {

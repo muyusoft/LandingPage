@@ -1153,3 +1153,19 @@
     animation: none !important;
   }
 }
+
+.serviceNavigation { display: none; }
+@media (max-width:760px) {
+  .servicesSection { padding-bottom: 28px; }
+  .serviceNavigation { display: block; margin-bottom: 16px; }
+  .serviceSelectors { display: flex; gap: 6px; }
+  .serviceSelectors button { flex: 1; min-width: 0; min-height: 44px; padding: 8px 4px; border: 1px solid var(--line); border-radius: 8px; font-size: 10px; color: var(--muted); }
+  .serviceSelectors button[aria-pressed="true"] { color: var(--blue); border-color: var(--blue); background: var(--panel); }
+  .serviceNavigation > p { margin-top: 10px; color: var(--muted); font-size: 12px; }
+  .services { position: relative; display: flex; gap: 12px; overflow-x: auto; scroll-snap-type: x mandatory; overscroll-behavior-x: contain; padding: 4px 0 12px; scrollbar-width: thin; }
+  .services::after { content: ""; flex: 0 0 8%; }
+  .services > .service { flex: 0 0 92%; min-width: 0; scroll-snap-align: start; padding: 20px; }
+  .services > .service:hover { transform: none; }
+  .services .serviceNumber { gap: 8px; flex-wrap: wrap; }
+  .services .serviceDetails div { grid-template-columns: 65px minmax(0,1fr); }
+}

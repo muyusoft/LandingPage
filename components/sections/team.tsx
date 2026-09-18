@@ -1,6 +1,9 @@
 import { useTranslations } from "next-intl";
 import Image, { type StaticImageData } from "next/image";
 import matheoPhoto from "@/assets/team/matheo-chavez.jpeg";
+import anthonyPhoto from "@/assets/team/anthony-cochea.jpeg";
+import juanPhoto from "@/assets/team/juan-aristizabal.jpeg";
+import andresPhoto from "@/assets/team/andres-loza.jpeg";
 import { Card } from "@/components/ui/card";
 import { Reveal } from "@/components/ui/reveal";
 import { SectionHeading } from "@/components/ui/section-heading";
@@ -10,6 +13,9 @@ const MEMBER_KEYS = ["one", "two", "three", "four"] as const;
 // Fotos disponibles por miembro; el resto usa el placeholder de iniciales.
 const MEMBER_PHOTOS: Partial<Record<(typeof MEMBER_KEYS)[number], StaticImageData>> = {
   one: matheoPhoto,
+  two: anthonyPhoto,
+  three: juanPhoto,
+  four: andresPhoto
 };
 
 function getInitials(name: string) {
@@ -25,14 +31,14 @@ export function Team() {
   const t = useTranslations("Team");
 
   return (
-    <section id="team" className="mx-auto max-w-(--width-content) px-6 py-24">
+    <section id="team" className="mx-auto max-w-(--width-content) px-6 pt-8 pb-16 min-[761px]:py-24">
       <SectionHeading
         eyebrow={t("eyebrow")}
         title={t("title")}
         description={t("description")}
       />
 
-      <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+      <div className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
         {MEMBER_KEYS.map((key, index) => {
           const name = t(`members.${key}.name`);
           const photo = MEMBER_PHOTOS[key];

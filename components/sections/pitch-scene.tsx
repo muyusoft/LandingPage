@@ -1,5 +1,6 @@
 "use client";
 
+import { ArrowIcon } from "@/components/ui/arrow-icon";
 import { useTranslations } from "next-intl";
 import styles from "./pitch.module.css";
 
@@ -51,7 +52,7 @@ export function PitchScene({ index }: { index: number }) {
   if (index === 2) return (
     <>
       <p className={styles.smallLabel}>03 / {t("demoLabel")}</p>
-      <div className={styles.url}>↗ &nbsp; staging.project.example</div>
+      <div className={styles.url}><ArrowIcon /> &nbsp; staging.project.example</div>
       <MiniApp reviewed />
       <div className={styles.feedback}><span className={styles.avatar}>{t("you")}</span><p>{t("feedback")}<small>{t("feedbackContext")}</small></p></div>
     </>
@@ -64,7 +65,7 @@ export function PitchScene({ index }: { index: number }) {
       <p className={styles.deliveryCopy}>{t("deliveryCopy")}</p>
       <div className={styles.deliverables}>
         {(["code", "docs", "tests", "access"] as const).map((key, i) => (
-          <div className={styles.deliverable} key={key}><span aria-hidden="true">{["⌘", "≡", "✓", "↗"][i]}</span>{t(`deliverables.${key}.title`)}<small>{t(`deliverables.${key}.description`)}</small></div>
+          <div className={styles.deliverable} key={key}><span aria-hidden="true">{i === 3 ? <ArrowIcon /> : ["⌘", "≡", "✓"][i]}</span>{t(`deliverables.${key}.title`)}<small>{t(`deliverables.${key}.description`)}</small></div>
         ))}
       </div>
       <div className={styles.ownership}><span>✓ &nbsp; {t("ready")}</span><span>{t("ownership")}</span></div>

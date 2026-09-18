@@ -13,7 +13,7 @@ const SLUG_PATTERN = /^(.+)\.[a-z]{2}\.mdx$/;
 export type WorkFrontmatter = {
   title: string;
   client: string;
-  year: number;
+  year?: number;
   stack: string[];
   excerpt: string;
   showcase?: {

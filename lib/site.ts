@@ -42,7 +42,7 @@ export function buildMetadata({
         title,
         description,
         url,
-        siteName: "Muyusoft",
+        siteName: "MuyuSoft",
         locale,
         type: "website",
       },

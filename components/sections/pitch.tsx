@@ -1,5 +1,8 @@
 ﻿"use client";
 
+import { ExpandingPanel } from "@/components/ui/expanding-panel";
+import { useAccordionAnchor } from "@/hooks/use-accordion-anchor";
+import { ArrowIcon } from "@/components/ui/arrow-icon";
 import { useTranslations } from "next-intl";
 import { useEffect, useRef, useState } from "react";
 import { PitchScene } from "./pitch-scene";
@@ -10,6 +13,8 @@ const STEP_KEYS = ["one", "two", "three", "four"] as const;
 export function Pitch() {
   const t = useTranslations("Pitch");
   const [activeIndex, setActiveIndex] = useState(0);
+  const [mobileStep, setMobileStep] = useState<number | null>(0);
+  const anchor = useAccordionAnchor();
   const stepsRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -54,6 +59,26 @@ export function Pitch() {
         <div><p className={styles.eyebrow}>{t("eyebrow")}</p><h2 id="pitch-title">{t("title")}</h2></div>
         <p className={styles.description}>{t("description")}</p>
       </div>
+      <div className={styles.mobileSteps}>
+        {STEP_KEYS.map((key, index) => (
+          <article key={key} className={styles.mobileStep}>
+            <h3><button type="button" id={`pitch-mobile-heading-${index}`} aria-expanded={mobileStep === index} aria-controls={`pitch-mobile-panel-${index}`} onClick={(event) => {
+              anchor(event.currentTarget);
+              setMobileStep(mobileStep === index ? null : index);
+            }}><span className={styles.stepNumber}>0{index + 1} / {t(`steps.${key}.label`)}</span><span className={styles.mobileStepTitle}>{t(`steps.${key}.title`)}<span aria-hidden="true">{mobileStep === index ? "−" : "+"}</span></span></button></h3>
+            <ExpandingPanel id={`pitch-mobile-panel-${index}`} labelledBy={`pitch-mobile-heading-${index}`} open={mobileStep === index}>
+              <div className={styles.mobilePanel}>
+              <p>{t(`steps.${key}.description`)}</p>
+              <div className={styles.outcome}>{t(`steps.${key}.outcome`)}</div>
+              <div className={`${styles.mobileVisual} ${styles.window}`}>
+                <div className={styles.canvas}><PitchScene index={index} /></div>
+                <div className={styles.windowFooter}><span>{t("visual.illustrative")}</span><span>{t("visual.demo")}</span></div>
+              </div>
+              </div>
+            </ExpandingPanel>
+          </article>
+        ))}
+      </div>
       <div className={styles.story}>
         <div className={styles.stage}>
           <div data-section-enter="" className={styles.window}>
@@ -72,7 +97,7 @@ export function Pitch() {
               </a>
             ))}
           </nav>
-          <div className={styles.hint}><span>{t("visual.continuity")}</span><span>{t("visual.scroll")} <span aria-hidden="true">↓</span></span></div>
+          <div className={styles.hint}><span>{t("visual.continuity")}</span><span>{t("visual.scroll")} <span aria-hidden="true"><ArrowIcon direction="down" /></span></span></div>
         </div>
         <div ref={stepsRef}>
           {STEP_KEYS.map((key, index) => (

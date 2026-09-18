@@ -28,8 +28,8 @@ const splineSansMono = Spline_Sans_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Muyusoft",
-  description: "Muyusoft — AI-first software studio",
+  title: "MuyuSoft",
+  description: "MuyuSoft — Custom software built to last",
 };
 
 export function generateStaticParams() {
@@ -55,7 +55,7 @@ export default async function RootLayout({
   const organizationJsonLd = {
     "@context": "https://schema.org",
     "@type": "ProfessionalService",
-    name: "Muyusoft",
+    name: "MuyuSoft",
     description: t("description"),
     url: SITE_URL,
     email: "hello@muyusoft.com",

@@ -1,3 +1,4 @@
+import { ArrowIcon } from "@/components/ui/arrow-icon";
 import { useTranslations } from "next-intl";
 import styles from "./start-contact.module.css";
 
@@ -12,7 +13,7 @@ export function StartArtifact({ index }: { index: number }) {
       <div className={styles.artifactBody}>
         {index === 0 && <>
           <div className={styles.agendaTitle}>
-            <div className={styles.calendarIcon} aria-hidden="true">↗</div>
+            <div className={styles.calendarIcon} aria-hidden="true"><ArrowIcon /></div>
             <div><strong>{t("conversation.title")}</strong><small>{t("conversation.subtitle")}</small></div>
           </div>
           {(["problem", "context", "next"] as const).map((row, i) => (
@@ -36,7 +37,7 @@ export function StartArtifact({ index }: { index: number }) {
         {index === 3 && <div className={styles.demoApp}>
           <strong>{t("demo.title")}</strong>
           {(["flow", "access", "feedback"] as const).map(row => (
-            <div className={styles.demoRow} key={row}><span>{t(`demo.${row}.label`)}</span><span className={row === "flow" ? styles.miniTag : undefined}>{t(`demo.${row}.value`)}</span></div>
+            <div className={styles.demoRow} key={row}><span>{t(`demo.${row}.label`)}</span><span className={row === "flow" ? styles.miniTag : undefined}>{t(`demo.${row}.value`)}{row === "feedback" && <> <ArrowIcon /></>}</span></div>
           ))}
         </div>}
       </div>

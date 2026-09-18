@@ -11,11 +11,11 @@ export function Hero() {
   const t = useTranslations("Hero");
 
   return (
-    <section className="relative flex min-h-[calc(100svh_-_var(--height-nav))] items-center justify-center overflow-hidden px-6 text-center">
+    <section className="relative flex min-h-[calc(100svh_-_var(--height-nav))] items-center justify-center overflow-hidden px-6 py-16 text-center sm:py-20">
       <HeroWeave />
       <div className="hero-veil pointer-events-none" aria-hidden="true" />
 
-      <div className="relative z-10 mx-auto flex max-w-2xl flex-col items-center gap-6">
+      <div className="relative z-10 mx-auto flex w-full max-w-[960px] flex-col items-center gap-6 sm:gap-8">
         <Reveal
           as="span"
           index={0}
@@ -27,12 +27,12 @@ export function Hero() {
         <Reveal
           as="h1"
           index={1}
-          className="text-4xl font-semibold -tracking-[.035em] text-fg sm:text-5xl"
+          className="max-w-[18ch] text-[clamp(2.25rem,5.6vw,5rem)] leading-[1.08] font-semibold -tracking-[.035em] text-balance text-fg"
         >
           {t("title")}
         </Reveal>
 
-        <Reveal as="p" index={2} className="max-w-xl text-lg text-muted">
+        <Reveal as="p" index={2} className="max-w-[55ch] text-[clamp(1.125rem,1.4vw,1.25rem)] leading-relaxed text-pretty text-muted">
           {t("description")}
         </Reveal>
 

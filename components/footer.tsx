@@ -22,7 +22,7 @@ export function Footer() {
     <footer className="border-t border-line">
       <div className="mx-auto grid max-w-(--width-content) gap-10 px-6 py-16 sm:grid-cols-3">
         <div>
-          <p className="font-mono text-sm font-semibold text-fg">Muyusoft</p>
+          <p className="font-mono text-sm font-semibold text-fg">MuyuSoft</p>
           <p className="mt-2 max-w-xs text-sm text-muted">{t("tagline")}</p>
         </div>
 
