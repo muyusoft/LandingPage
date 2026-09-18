@@ -435,7 +435,7 @@
     "title": "The next great idea",
     "description": "Tell us what you want to solve. You do not need all the answers to take the first step.",
     "contactInfo": {
-      "email": "hello@muyusoft.com",
+      "email": "contact@muyusoft.com",
       "location": "From Ecuador · For founders and businesses in Ecuador, the US, and Europe",
       "responseTime": "One of our four partners replies"
     },
@@ -526,7 +526,7 @@
   },
   "PrivacyPage": {
     "title": "Privacy policy",
-    "intro": "The form collects your name, email, message, service of interest, and optional company and budget. The submission integration uses Web3Forms to process your inquiry. The site may enable Plausible Analytics when configured. For questions about your data, contact hello@muyusoft.com.",
+    "intro": "The form collects your name, email, message, service of interest, and optional company and budget. The submission integration uses Web3Forms to process your inquiry. The site may enable Plausible Analytics when configured. For questions about your data, contact contact@muyusoft.com.",
     "placeholderNotice": "Provisional notice: the privacy policy, including retention, providers, and rights requests, still requires completion and review before final publication."
   },
   "TermsPage": {

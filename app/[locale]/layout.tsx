@@ -58,7 +58,7 @@ export default async function RootLayout({
     name: "MuyuSoft",
     description: t("description"),
     url: SITE_URL,
-    email: "hello@muyusoft.com",
+    email: "contact@muyusoft.com",
     areaServed: ["US", "Europe", "Ecuador"],
   };
 

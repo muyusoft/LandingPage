@@ -435,7 +435,7 @@
     "title": "La próxima buena idea",
     "description": "Cuéntanos qué quieres resolver. No hace falta tener todo definido para dar el primer paso.",
     "contactInfo": {
-      "email": "hello@muyusoft.com",
+      "email": "contact@muyusoft.com",
       "location": "Desde Ecuador · Para fundadores y empresas de Ecuador, EE. UU. y Europa",
       "responseTime": "Te responde uno de los cuatro socios"
     },
@@ -526,7 +526,7 @@
   },
   "PrivacyPage": {
     "title": "Política de privacidad",
-    "intro": "El formulario recoge nombre, correo, mensaje, servicio de interés y, si los proporcionas, empresa y presupuesto. La integración de envío utiliza Web3Forms para tramitar la consulta. El sitio puede activar Plausible Analytics si está configurado. Para consultas sobre tus datos, escribe a hello@muyusoft.com.",
+    "intro": "El formulario recoge nombre, correo, mensaje, servicio de interés y, si los proporcionas, empresa y presupuesto. La integración de envío utiliza Web3Forms para tramitar la consulta. El sitio puede activar Plausible Analytics si está configurado. Para consultas sobre tus datos, escribe a contact@muyusoft.com.",
     "placeholderNotice": "Aviso provisional: falta completar y revisar la política de privacidad, incluidos conservación, proveedores y ejercicio de derechos, antes de su publicación definitiva."
   },
   "TermsPage": {
