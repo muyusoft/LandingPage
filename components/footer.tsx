@@ -1,4 +1,6 @@
 import { useTranslations } from "next-intl";
+import Image from "next/image";
+import logoWhite from "@/assets/brand/logo-white.png";
 import { Link } from "@/lib/i18n";
 
 const SITE_LINKS = [
@@ -22,8 +24,8 @@ export function Footer() {
     <footer className="border-t border-line">
       <div className="mx-auto grid max-w-(--width-content) gap-10 px-6 py-16 sm:grid-cols-3">
         <div>
-          <p className="font-mono text-sm font-semibold text-fg">MuyuSoft</p>
-          <p className="mt-2 max-w-xs text-sm text-muted">{t("tagline")}</p>
+          <Image src={logoWhite} alt="MuyuSoft" className="h-14 w-auto" />
+          <p className="mt-3 max-w-xs text-sm text-muted">{t("tagline")}</p>
         </div>
 
         <div>

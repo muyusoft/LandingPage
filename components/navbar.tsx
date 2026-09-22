@@ -2,7 +2,9 @@
 
 import { ArrowIcon } from "@/components/ui/arrow-icon";
 import { useLocale, useTranslations } from "next-intl";
+import Image from "next/image";
 import { useEffect, useRef, useState, type MouseEvent } from "react";
+import logoWhite from "@/assets/brand/logo-white.png";
 import styles from "./navbar.module.css";
 import { useScrollSpy } from "@/hooks/use-scroll-spy";
 import { routing } from "@/i18n/routing";
@@ -137,17 +139,8 @@ export function Navbar() {
       }`}
     >
       <div className="mx-auto flex h-full max-w-(--width-content) items-center justify-between px-6">
-        <Link
-          href="/"
-          className="flex items-center gap-2 font-mono text-sm font-semibold text-fg"
-        >
-          <span
-            aria-hidden="true"
-            className="flex h-8 w-8 items-center justify-center rounded-chip bg-accent-2 text-bg"
-          >
-            M
-          </span>
-          <span>MuyuSoft</span>
+        <Link href="/" className="flex items-center">
+          <Image src={logoWhite} alt="MuyuSoft" className="h-10 w-auto" priority />
         </Link>
 
         <nav
@@ -209,7 +202,7 @@ export function Navbar() {
       >
         <div className={styles.panel}>
           <div className={styles.panelHeader}>
-            <span className={styles.brand}><span aria-hidden="true">M</span>MuyuSoft</span>
+            <span className={styles.brand}><Image src={logoWhite} alt="MuyuSoft" /></span>
             <button type="button" className={styles.close} onClick={closeMenu} aria-label={t("closeMenu")} autoFocus>
               <span>{t("close")}</span>
               <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="m6 6 12 12M18 6 6 18" /></svg>
