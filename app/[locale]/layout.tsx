@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Sora, Spline_Sans_Mono } from "next/font/google";
+import localFont from "next/font/local";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { getLocale, getTranslations } from "next-intl/server";
 import { notFound } from "next/navigation";
@@ -12,19 +12,28 @@ import "../globals.css";
 
 const PLAUSIBLE_DOMAIN = process.env.NEXT_PUBLIC_PLAUSIBLE_DOMAIN;
 
-const sora = Sora({
-  subsets: ["latin"],
-  weight: ["400", "600", "700"],
+// Fuentes servidas desde el repo (assets/fonts, licencia OFL) con next/font/local. No se usa
+// next/font/google: descargar las fuentes durante el build rompía el deploy en Dokploy con
+// Turbopack ("next/font/google queries have exactly one entry") y además dependía de la red.
+// Solo el subconjunto latin, que cubre español e inglés.
+const sora = localFont({
+  src: [
+    { path: "../../assets/fonts/sora-latin-400-normal.woff2", weight: "400", style: "normal" },
+    { path: "../../assets/fonts/sora-latin-600-normal.woff2", weight: "600", style: "normal" },
+    { path: "../../assets/fonts/sora-latin-700-normal.woff2", weight: "700", style: "normal" },
+  ],
+  variable: "--font-sans-loaded",
+  display: "swap",
 });
 
-// El className por defecto no se usa: el token --font-mono en globals.css ya
-// referencia "Spline Sans Mono" por nombre literal (usado vía la utilidad font-mono).
-// Solo necesitamos que Next.js self-hostee el @font-face; `variable` evita que
-// esta clase pise el font-family por defecto del documento.
-const splineSansMono = Spline_Sans_Mono({
-  subsets: ["latin"],
-  weight: ["400", "500"],
+// Solo se expone como variable: --font-mono en globals.css la usa (utilidad font-mono y módulos CSS).
+const splineSansMono = localFont({
+  src: [
+    { path: "../../assets/fonts/spline-sans-mono-latin-400-normal.woff2", weight: "400", style: "normal" },
+    { path: "../../assets/fonts/spline-sans-mono-latin-500-normal.woff2", weight: "500", style: "normal" },
+  ],
   variable: "--font-mono-loaded",
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -65,7 +74,7 @@ export default async function RootLayout({
   return (
     <html
       lang={locale}
-      className={`${sora.className} ${splineSansMono.variable} h-full antialiased`}
+      className={`${sora.className} ${sora.variable} ${splineSansMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-bg text-fg">
         <script

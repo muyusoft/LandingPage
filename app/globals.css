@@ -23,8 +23,9 @@
   --color-line-2: rgba(242,244,247,.18);
 
   /* tipografía */
-  --font-sans: "Sora", ui-sans-serif, system-ui, sans-serif;
-  --font-mono: "Spline Sans Mono", ui-monospace, monospace;
+  /* Las variables *-loaded las declara next/font/local en <html> (app/[locale]/layout.tsx). */
+  --font-sans: var(--font-sans-loaded), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-mono-loaded), ui-monospace, monospace;
 
   /* radios */
   --radius-chip:  6px;
