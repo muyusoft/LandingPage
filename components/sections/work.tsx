@@ -2,7 +2,8 @@
 import { useLocale, useTranslations } from "next-intl";
 import type { Locale } from "@/i18n/routing";
 import { Link } from "@/lib/i18n";
-import { getAllWorkItems } from "@/lib/work";
+import { getAllWorkItems, isInProgress } from "@/lib/work";
+import { InProgress } from "./in-progress";
 import { WorkCarousel } from "./work-carousel";
 import { WorkIllustration } from "./work-illustration";
 import styles from "./showcase.module.css";
@@ -10,7 +11,9 @@ import styles from "./showcase.module.css";
 export function Work() {
   const locale = useLocale() as Locale;
   const t = useTranslations("Work");
-  const items = getAllWorkItems(locale);
+  const all = getAllWorkItems(locale);
+  const items = all.filter(item => !isInProgress(item));
+  const inProgress = all.filter(isInProgress);
   return (
     <section id="work" aria-labelledby="work-title" className={`${styles.section} ${styles.workSection}`}>
       <div className={styles.wrap}>
@@ -40,6 +43,7 @@ export function Work() {
             );
           })}
         </WorkCarousel>
+        <InProgress items={inProgress} />
       </div>
     </section>
   );

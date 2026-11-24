@@ -1,0 +1,315 @@
+/* Tarjetas de socios clicables y hoja de perfil (hoja inferior en móvil, modal centrado en sm+). */
+
+.card {
+  cursor: pointer;
+  transition: border-color .2s, transform .3s var(--ease-brand);
+}
+
+.card:hover {
+  border-color: var(--color-line-2);
+}
+
+.card:focus-visible {
+  outline: 2px solid var(--color-accent-2);
+  outline-offset: 3px;
+}
+
+.dialog {
+  position: fixed;
+  inset: auto 0 0;
+  margin: 0;
+  width: 100%;
+  max-width: none;
+  max-height: 88dvh;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: var(--color-fg);
+  overflow: visible;
+}
+
+.dialog::backdrop {
+  background: rgb(0 0 0 / .65);
+}
+
+.dialog[open] .sheet {
+  animation: sheet-enter 280ms var(--ease-brand);
+}
+
+.sheet {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  max-height: 88dvh;
+  border: 1px solid var(--color-line);
+  border-bottom: 0;
+  border-radius: 20px 20px 0 0;
+  background: var(--color-surface);
+  overflow: hidden;
+  transition: transform .2s var(--ease-brand);
+  /* Alto de la foto en móvil; el gesto de dos alturas lo cambia desde JS. */
+  --photo-h: min(280px, 36dvh);
+}
+
+/* Durante el arrastre la foto y la hoja siguen al dedo, sin transición. */
+.sheet.dragging,
+.sheet.dragging .photo,
+.sheet.dragging .grab {
+  transition: none;
+}
+
+/* Zona de arrastre: cubre toda la foto, con el asa visible arriba. */
+.grab {
+  position: absolute;
+  inset: 0 0 auto;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  height: var(--photo-h);
+  padding-top: 10px;
+  touch-action: none;
+  cursor: grab;
+  transition: height .35s var(--ease-brand);
+}
+
+.grab span {
+  width: 40px;
+  height: 4px;
+  border-radius: 99px;
+  background: rgb(242 244 247 / .75);
+  box-shadow: 0 1px 4px rgb(0 0 0 / .4);
+}
+
+.close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  z-index: 3;
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1px solid var(--color-line-2);
+  background: rgb(8 9 11 / .7);
+  backdrop-filter: blur(6px);
+  color: var(--color-fg);
+  cursor: pointer;
+}
+
+/* Móvil: foto de portada a todo el ancho con el nombre encima; el resto debajo. */
+.layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  min-height: 0;
+  padding-bottom: max(20px, env(safe-area-inset-bottom));
+  overflow-y: auto;
+  overscroll-behavior: contain;
+}
+
+.photo {
+  grid-area: 1 / 1;
+  width: 100%;
+  height: var(--photo-h);
+  transition: height .35s var(--ease-brand);
+}
+
+.body {
+  display: contents;
+}
+
+.head {
+  grid-area: 1 / 1;
+  align-self: end;
+  z-index: 1;
+  min-width: 0;
+  padding: 56px 20px 14px;
+  background: linear-gradient(transparent, rgb(18 20 24 / .82) 45%, var(--color-surface));
+}
+
+/* Más específico que los márgenes propios de cada bloque, para que todos respeten el borde. */
+.layout .head ~ * {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.layout .head ~ .cta {
+  width: auto;
+}
+
+.name {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -.035em;
+}
+
+.role {
+  margin-top: 4px;
+  font-size: 13px;
+  line-height: 1.45;
+  color: var(--color-accent-2);
+}
+
+.bio {
+  margin-top: 8px;
+  font-size: 15px;
+  line-height: 1.65;
+  color: var(--color-muted);
+}
+
+.kicker {
+  margin: 24px 0 10px;
+  font: 10px var(--font-mono);
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--color-dim);
+}
+
+.focus {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.focus li {
+  padding: 6px 10px;
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius-chip);
+  font-size: 13px;
+  color: var(--color-fg);
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 44px;
+  font-size: 14px;
+  color: var(--color-accent-2);
+}
+
+.cta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  min-height: 52px;
+  margin-top: 24px;
+  padding: 14px 16px;
+  border: 0;
+  border-radius: var(--radius-btn);
+  background: var(--color-accent-2);
+  color: var(--color-bg);
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.dialog button:focus-visible,
+.dialog a:focus-visible {
+  outline: 2px solid var(--color-accent-2);
+  outline-offset: 3px;
+}
+
+.dialog .cta:focus-visible {
+  outline-color: var(--color-fg);
+}
+
+@media (min-width: 640px) {
+  .dialog {
+    inset: 0;
+    margin: auto;
+    width: min(720px, calc(100% - 48px));
+    max-height: calc(100dvh - 48px);
+    height: fit-content;
+  }
+  .dialog[open] .sheet {
+    animation-name: modal-enter;
+  }
+  .sheet {
+    max-height: calc(100dvh - 48px);
+    border-bottom: 1px solid var(--color-line);
+    border-radius: var(--radius-panel);
+  }
+  .grab {
+    display: none;
+  }
+  .close {
+    top: 14px;
+    right: 14px;
+  }
+  .layout {
+    display: flex;
+    align-items: stretch;
+    padding: 0;
+  }
+  .grab span {
+    box-shadow: none;
+  }
+  .photo {
+    flex: none;
+    width: 260px;
+    height: auto;
+    transition: none;
+  }
+  /* En el modal la foto es vertical: el enfoque de la portada móvil no aplica. */
+  .photo img {
+    object-position: 50% 20% !important;
+  }
+  .head {
+    padding: 0 52px 0 0;
+    background: none;
+  }
+  .layout .head ~ * {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .layout .head ~ .cta {
+    width: 100%;
+  }
+  .bio {
+    margin-top: 16px;
+  }
+  .body {
+    display: block;
+    flex: 1;
+    padding: 32px;
+  }
+  .name {
+    font-size: 26px;
+  }
+  .role {
+    margin-top: 6px;
+    font-size: 14px;
+  }
+}
+
+@keyframes sheet-enter {
+  from { transform: translateY(100%); }
+  to { transform: translateY(0); }
+}
+
+@keyframes modal-enter {
+  from { opacity: 0; transform: translateY(12px) scale(.98); }
+  to { opacity: 1; transform: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .card,
+  .sheet,
+  .photo,
+  .grab {
+    transition: none;
+  }
+  .dialog[open] .sheet {
+    animation: none;
+  }
+}

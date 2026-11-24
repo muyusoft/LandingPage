@@ -204,21 +204,51 @@
     "members": {
       "one": {
         "name": "Matheo Chávez",
-        "role": "Co-fundador y CEO · Full-Stack Engineer"
+        "role": "Co-fundador y CEO · Full-Stack Engineer",
+        "bio": "Coordina cada proyecto de principio a fin y trabaja en todo el stack, del modelo de datos a la interfaz. Es tu punto de contacto para alcance, prioridades y fechas.",
+        "focus": [
+          "Producto y alcance",
+          "Desarrollo full-stack",
+          "Gestión de proyectos"
+        ]
       },
       "two": {
         "name": "Anthony Cochea",
-        "role": "Co-fundador · Líder de Backend e Infraestructura"
+        "role": "Co-fundador · Líder de Backend e Infraestructura",
+        "bio": "Diseña la arquitectura del backend, las APIs y la infraestructura. Se encarga de que la aplicación sea segura, rápida y fácil de mantener.",
+        "focus": [
+          "APIs y arquitectura",
+          "Bases de datos",
+          "Nube y despliegue"
+        ]
       },
       "three": {
         "name": "Juan Aristizabal",
-        "role": "Co-fundador · Líder de Frontend y UX"
+        "role": "Co-fundador · Líder de Frontend y UX",
+        "bio": "Convierte los flujos en interfaces claras para web y móvil. Cuida el diseño, la accesibilidad y que cada pantalla se entienda a la primera.",
+        "focus": [
+          "Interfaces web y móviles",
+          "Diseño UX",
+          "Accesibilidad"
+        ]
       },
       "four": {
         "name": "Andrés Loza",
-        "role": "Co-fundador · Líder de QA y Entregas"
+        "role": "Co-fundador · Líder de QA y Entregas",
+        "bio": "Define las pruebas y revisa cada entrega antes de que llegue a tus manos. Documenta lo construido para que otro equipo pueda mantenerlo.",
+        "focus": [
+          "Pruebas y calidad",
+          "Entregas",
+          "Documentación"
+        ]
       }
-    }
+    },
+    "viewProfile": "Ver perfil",
+    "close": "Cerrar",
+    "focusTitle": "En qué se enfoca",
+    "linksTitle": "Enlaces",
+    "contactCta": "Conversemos sobre tu proyecto",
+    "openProfile": "Ver perfil de {name}"
   },
   "HowWeStart": {
     "eyebrow": "Cómo empezamos",
@@ -388,6 +418,14 @@
       "east": "Entrega · Zona este",
       "updated": "Ruta actualizada",
       "confirm": "Confirmar entrega"
+    },
+    "inProgress": {
+      "eyebrow": "En construcción",
+      "title": "Productos propios que estamos construyendo.",
+      "description": "Además de proyectos a medida, desarrollamos nuestras propias aplicaciones. Pronto podrás verlas en acción.",
+      "status": "En desarrollo",
+      "stack": "Tecnologías",
+      "shotAlt": "Pantalla de {name}, en desarrollo"
     }
   },
   "WorkPage": {

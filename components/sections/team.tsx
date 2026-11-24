@@ -1,34 +1,59 @@
 import { useTranslations } from "next-intl";
-import Image, { type StaticImageData } from "next/image";
+import type { StaticImageData } from "next/image";
 import matheoPhoto from "@/assets/team/matheo-chavez.jpeg";
 import anthonyPhoto from "@/assets/team/anthony-cochea.jpeg";
 import juanPhoto from "@/assets/team/juan-aristizabal.jpeg";
 import andresPhoto from "@/assets/team/andres-loza.jpeg";
-import { Card } from "@/components/ui/card";
-import { Reveal } from "@/components/ui/reveal";
 import { SectionHeading } from "@/components/ui/section-heading";
+import { TeamGrid, type TeamMember } from "./team-grid";
 
 const MEMBER_KEYS = ["one", "two", "three", "four"] as const;
+type MemberKey = (typeof MEMBER_KEYS)[number];
 
 // Fotos disponibles por miembro; el resto usa el placeholder de iniciales.
-const MEMBER_PHOTOS: Partial<Record<(typeof MEMBER_KEYS)[number], StaticImageData>> = {
+const MEMBER_PHOTOS: Partial<Record<MemberKey, StaticImageData>> = {
   one: matheoPhoto,
   two: anthonyPhoto,
   three: juanPhoto,
-  four: andresPhoto
+  four: andresPhoto,
 };
 
-function getInitials(name: string) {
-  return name
-    .split(" ")
-    .map((part) => part[0])
-    .join("")
-    .slice(0, 2)
-    .toUpperCase();
-}
+// Punto de enfoque vertical de cada foto en la portada de la hoja móvil: deja la cara por encima
+// del nombre. Las fotos más cerradas (cara grande) necesitan un valor más alto.
+const PHOTO_FOCUS: Record<MemberKey, string> = {
+  one: "12%",
+  two: "12%",
+  three: "10%",
+  four: "42%",
+};
+
+// Perfiles públicos por miembro. Solo se muestran los que tienen URL.
+const MEMBER_LINKS: Record<MemberKey, { linkedin?: string; github?: string }> = {
+  one: {},
+  two: {},
+  three: {},
+  four: {},
+};
 
 export function Team() {
   const t = useTranslations("Team");
+
+  const members: TeamMember[] = MEMBER_KEYS.map((key) => {
+    const { linkedin, github } = MEMBER_LINKS[key];
+    return {
+      key,
+      name: t(`members.${key}.name`),
+      role: t(`members.${key}.role`),
+      bio: t(`members.${key}.bio`),
+      focus: t.raw(`members.${key}.focus`) as string[],
+      photo: MEMBER_PHOTOS[key],
+      photoFocus: PHOTO_FOCUS[key],
+      links: [
+        linkedin && { label: "LinkedIn", href: linkedin },
+        github && { label: "GitHub", href: github },
+      ].filter((link): link is { label: string; href: string } => Boolean(link)),
+    };
+  });
 
   return (
     <section id="team" className="mx-auto max-w-(--width-content) px-6 pt-8 pb-16 min-[761px]:py-24">
@@ -37,49 +62,7 @@ export function Team() {
         title={t("title")}
         description={t("description")}
       />
-
-      <div className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
-        {MEMBER_KEYS.map((key, index) => {
-          const name = t(`members.${key}.name`);
-          const photo = MEMBER_PHOTOS[key];
-
-          return (
-            <Reveal key={key} index={index}>
-              {/* Móvil: tarjeta compacta, foto pequeña junto al nombre.
-                  sm+: retrato grande arriba, tal como en escritorio. */}
-              <Card className="flex h-full flex-row items-center gap-4 overflow-hidden p-4 sm:flex-col sm:items-stretch sm:gap-0 sm:p-0">
-                <div className="relative h-14 w-14 shrink-0 overflow-hidden rounded-full bg-surface-2 sm:aspect-[4/5] sm:h-auto sm:w-full sm:shrink sm:rounded-none">
-                  {photo ? (
-                    <Image
-                      src={photo}
-                      alt=""
-                      fill
-                      placeholder="blur"
-                      sizes="(min-width: 1024px) 25vw, (min-width: 640px) 50vw, 56px"
-                      className="object-cover"
-                    />
-                  ) : (
-                    <div
-                      aria-hidden="true"
-                      className="flex h-full w-full items-center justify-center font-mono text-sm text-accent-2 sm:text-4xl"
-                    >
-                      {getInitials(name)}
-                    </div>
-                  )}
-                </div>
-                <div className="flex min-w-0 flex-col gap-0.5 sm:gap-1 sm:p-6">
-                  <p className="truncate font-semibold text-fg sm:whitespace-normal">
-                    {name}
-                  </p>
-                  <p className="truncate text-sm text-muted sm:whitespace-normal">
-                    {t(`members.${key}.role`)}
-                  </p>
-                </div>
-              </Card>
-            </Reveal>
-          );
-        })}
-      </div>
+      <TeamGrid members={members} />
     </section>
   );
 }

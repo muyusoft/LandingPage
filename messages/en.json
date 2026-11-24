@@ -204,21 +204,51 @@
     "members": {
       "one": {
         "name": "Matheo Chávez",
-        "role": "Co-founder & CEO · Full-Stack Engineer"
+        "role": "Co-founder & CEO · Full-Stack Engineer",
+        "bio": "Coordinates every project from start to finish and works across the stack, from the data model to the interface. Your point of contact for scope, priorities and dates.",
+        "focus": [
+          "Product and scope",
+          "Full-stack development",
+          "Project management"
+        ]
       },
       "two": {
         "name": "Anthony Cochea",
-        "role": "Co-founder · Backend & Infrastructure Lead"
+        "role": "Co-founder · Backend & Infrastructure Lead",
+        "bio": "Designs the backend architecture, APIs and infrastructure. Makes sure your application is secure, fast and easy to maintain.",
+        "focus": [
+          "APIs and architecture",
+          "Databases",
+          "Cloud and deployment"
+        ]
       },
       "three": {
         "name": "Juan Aristizabal",
-        "role": "Co-founder · Frontend & UX Lead"
+        "role": "Co-founder · Frontend & UX Lead",
+        "bio": "Turns workflows into clear interfaces for web and mobile. Looks after design, accessibility and making every screen understandable at first sight.",
+        "focus": [
+          "Web and mobile interfaces",
+          "UX design",
+          "Accessibility"
+        ]
       },
       "four": {
         "name": "Andrés Loza",
-        "role": "Co-founder · QA & Delivery Lead"
+        "role": "Co-founder · QA & Delivery Lead",
+        "bio": "Defines the tests and reviews every delivery before it reaches you. Documents what was built so another team can maintain it.",
+        "focus": [
+          "Testing and quality",
+          "Deliveries",
+          "Documentation"
+        ]
       }
-    }
+    },
+    "viewProfile": "View profile",
+    "close": "Close",
+    "focusTitle": "Focus areas",
+    "linksTitle": "Links",
+    "contactCta": "Let’s talk about your project",
+    "openProfile": "View {name}’s profile"
   },
   "HowWeStart": {
     "eyebrow": "How we start",
@@ -388,6 +418,14 @@
       "east": "Delivery · East zone",
       "updated": "Route updated",
       "confirm": "Confirm delivery"
+    },
+    "inProgress": {
+      "eyebrow": "In the works",
+      "title": "Our own products, under construction.",
+      "description": "Alongside custom projects, we build our own applications. You will see them in action soon.",
+      "status": "In development",
+      "stack": "Technologies",
+      "shotAlt": "{name} screen, in development"
     }
   },
   "WorkPage": {

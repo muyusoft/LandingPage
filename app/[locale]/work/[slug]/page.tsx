@@ -5,7 +5,7 @@ import type { ComponentProps } from "react";
 import { Button } from "@/components/ui/button";
 import { routing, type Locale } from "@/i18n/routing";
 import { buildMetadata } from "@/lib/site";
-import { getWorkItem, getWorkSlugs } from "@/lib/work";
+import { getCaseStudySlugs, getWorkItem, isInProgress } from "@/lib/work";
 
 const mdxComponents = {
   h2: (props: ComponentProps<"h2">) => (
@@ -37,7 +37,7 @@ type PageParams = { locale: string; slug: string };
 
 export function generateStaticParams() {
   return routing.locales.flatMap((locale) =>
-    getWorkSlugs().map((slug) => ({ locale, slug })),
+    getCaseStudySlugs().map((slug) => ({ locale, slug })),
   );
 }
 
@@ -50,6 +50,7 @@ export async function generateMetadata({
 
   try {
     const { frontmatter } = await getWorkItem(slug, locale as Locale);
+    if (isInProgress(frontmatter)) return {};
     return buildMetadata({
       path: `/work/${slug}`,
       locale,
@@ -77,6 +78,8 @@ export default async function WorkCaseStudyPage({
   } catch {
     notFound();
   }
+
+  if (isInProgress(frontmatter)) notFound();
 
   return (
     <article className="px-6 py-24">
